@@ -4,8 +4,6 @@ THEN
   RESPONSE #100
     ActionOverride("Container1",DestroyItem("PLAT24"))
     ActionOverride("Container1",CreateItem("MISC82",0,0,0))
-    ActionOverride("Container1",CreateItem("RNDTRE08",0,0,0))
-    ActionOverride("Container1",CreateItem("RNDTRI03",0,0,0))
     CreateCreature("OLSKEL1W",[555.1088],SSE)
     CreateCreature("OLSKEL2M",[570.1136],SSE)
     CreateCreature("OLSKEL3M",[607.1187],SSE)

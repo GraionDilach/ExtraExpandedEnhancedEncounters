@@ -1,4 +1,4 @@
-@0    = ~Extra Expanded Enhanced Encounters for Baldur's Gate: Siege of Dragonspear, Version 2.0+~
+@0    = ~Extra Expanded Enhanced Encounters for Baldur's Gate: Enhanced Edition, Version 2.0+~
 @1    = ~EEEE: Melia Quicknight, Crossroads~
 @2    = ~EEEE: Bimmy's Badgering Bandits~
 @3    = ~EEEE: Reinforced Gnoll Stronghold~
@@ -7,6 +7,8 @@
 @6    = ~EEEE: Daenni's Bridge Bandits~
 @7    = ~EEEE: The Fire Drake in the Wyvern Cave~
 @8    = ~EEEE: Undercity Magma Bulwark Encounter; Red Skeleton-(U.M.B.E.R.S.)~ 
+
+@10   = ~This component uses monsters from Siege of Dragonspear only which are missing from the current installation. Skipping.~
 
 @101   = ~Melia Quicknight~
 @102   = ~Bimmy~

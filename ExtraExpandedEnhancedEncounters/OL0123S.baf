@@ -1,0 +1,9 @@
+IF
+	Global("OL_EEEE_UMBERS_SOD","MYAREA",0)
+  THEN
+	RESPONSE #100
+	  ActionOverride("Container1",CreateItem("RNDTRE08",0,0,0))
+	  ActionOverride("Container1",CreateItem("RNDTRI03",0,0,0))
+	  SetGlobal("OL_EEEE_UMBERS_SOD","MYAREA",1)
+  END
+  

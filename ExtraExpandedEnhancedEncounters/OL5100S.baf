@@ -1,0 +1,8 @@
+IF
+	Global("OL_EEEE_GNOLLS_SOD","MYAREA",0)
+  THEN
+	RESPONSE #100
+	  SetGlobal("OL_EEEE_GNOLLS_SOD","MYAREA",1)
+	  CreateCreature("BDPUDDBL",[2010.1245],NW)
+  END
+  

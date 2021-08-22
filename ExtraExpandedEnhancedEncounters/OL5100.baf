@@ -223,7 +223,6 @@ THEN
     CreateCreature("OLGNOLLE",[600.120],E)
     CreateCreature("OLGNOLLS",[1097.36],E)
     CreateCreature("OLGNOLL",[4990.35],E)
-    CreateCreature("BDPUDDBL",[2010.1245],NW)
     CreateCreature("JELLMU",[825.1331],SE)
     CreateCreature("JELLSPA",[355.1456],W)
 END
