@@ -1,0 +1,17 @@
+IF
+  Global("OL_EEEE_GNOLL_CAVE","AR5102",0)
+THEN
+  RESPONSE #100
+    CreateCreature("BDBEARCA",[317.217],SE)
+    CreateCreature("BDBEARCA",[366.222],SE)
+    CreateCreature("BDBEARCA",[370.180],SE)
+    ActionOverride("Container1",CreateItem("OLPOTN01",0,0,0))
+    ActionOverride("Container1",CreateItem("OLPOTN01",0,0,0))
+    ActionOverride("Container1",CreateItem("OLPOTN02",0,0,0))
+    ActionOverride("Container1",CreateItem("WAND09",4,0,0))
+    ActionOverride("Container1",CreateItem("BLUN36",0,0,0))
+    ActionOverride("Container1",CreateItem("SW1H49",0,0,0))
+    ActionOverride("Container1",CreateItem("SHLD17",0,0,0))
+    ActionOverride("Container1",CreateItem("BDLEAT08",0,0,0))
+    SetGlobal("OL_EEEE_GNOLL_CAVE","AR5102",1)
+END

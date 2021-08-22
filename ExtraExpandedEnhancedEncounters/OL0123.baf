@@ -1,0 +1,16 @@
+IF
+  Global("OL_EEEE_UMBERS","AR0123",0)
+THEN
+  RESPONSE #100
+    ActionOverride("Container1",DestroyItem("PLAT24"))
+    ActionOverride("Container1",CreateItem("MISC82",0,0,0))
+    ActionOverride("Container1",CreateItem("RNDTRE08",0,0,0))
+    ActionOverride("Container1",CreateItem("RNDTRI03",0,0,0))
+    CreateCreature("OLSKEL1W",[555.1088],SSE)
+    CreateCreature("OLSKEL2M",[570.1136],SSE)
+    CreateCreature("OLSKEL3M",[607.1187],SSE)
+    CreateCreature("OLSKEL4C",[517.1153],SSE)
+    CreateCreature("OLSKEL5C",[655.1116],SSE)
+    CreateCreature("OLSKEL6G",[630.1235],SSE)
+    SetGlobal("OL_EEEE_UMBERS","AR0123",1)
+END

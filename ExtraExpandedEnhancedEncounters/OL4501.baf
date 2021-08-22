@@ -1,0 +1,20 @@
+IF
+  Global("OL_EEEE_FIRE_DRAKE","AR4501",0)
+THEN
+  RESPONSE #100
+    CreateCreature("OLFDRAKE",[285.285],SE)
+    CreateCreature("OLGWYVRN",[530.700],E)
+    CreateCreature("OLGWYVRN",[737.737],NE)
+    CreateCreature("WYVERN",[680.300],E)
+    ActionOverride("Container1",DestroyItem("PLAT01"))
+    ActionOverride("Container1",CreateItem("OLPOTN01",0,0,0))
+    ActionOverride("Container1",CreateItem("OLPOTN01",0,0,0))
+    ActionOverride("Container1",CreateItem("OLPOTN01",0,0,0))
+    ActionOverride("Container1",CreateItem("OLPOTN02",0,0,0))
+    ActionOverride("Container1",CreateItem("CHAN12",0,0,0))
+    ActionOverride("Container1",CreateItem("SW1H47",0,0,0))
+    ActionOverride("Container1",CreateItem("BLUN15",0,0,0))
+    ActionOverride("Container1",CreateItem("OLDART01",0,0,0))
+    ActionOverride("Container1",CreateItem("OLRING05",0,0,0))
+    SetGlobal("OL_EEEE_FIRE_DRAKE","AR4501",1)
+END
