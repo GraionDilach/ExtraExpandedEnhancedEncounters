@@ -1,301 +1,259 @@
 BACKUP ~ExtraExpandedEnhancedEncounters/backup~
 AUTHOR ~Within Amnesia~
+
+ALWAYS
+	PRINT @0
+END
+
 AUTO_TRA ~ExtraExpandedEnhancedEncounters/translations/%s~
 LANGUAGE ~English~
          ~English~
          ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
 
+BEGIN @1
+LABEL OL-EEEE-COAST-WAY //AR2800
 
-BEGIN @0
-LABEL OL-EEEE
+	EXTEND_BOTTOM ~AR2800.BCS~ ~ExtraExpandedEnhancedEncounters/OL2800.BAF~
 
-COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLMELIAQ.D~ ~override~
+	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLMELIAQ.D~
 
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLMELIAQ.cre~ ~override~
+		SAY 0x8 @101
+		SAY 0xC @101
+		WRITE_ASCII 0x2cc ~OLMELIAQ~
 
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.ITM~ ~override~
+			SAY 0xC @120
+			SAY 0x54 @121
 
-COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLDAENNI.D~ ~override~
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.BAM~ ~override~
 
+BEGIN @2
+LABEL OL-EEEE-LONELY-PEAKS //AR4400
 
+	EXTEND_BOTTOM ~AR4400.BCS~ ~ExtraExpandedEnhancedEncounters/OL4400.BAF~
 
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLMELIAQ.cre~ ~override~
-	SAY 0x8 @101
-	SAY 0xC @101
-	WRITE_ASCII 0x2cc ~OLMELIAQ~
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLBIMMY.cre~ ~override~
+		SAY 0x8 @102
+		SAY 0xC @102
+		WRITE_ASCII 0x2cc ~BIMMY~
 
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.ITM~ ~override~
+		SAY 0xC @135
+		SAY 0x54 @136
 
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLBIMMY.cre~ ~override~
-	SAY 0x8 @102
-	SAY 0xC @102
-	WRITE_ASCII 0x2cc ~BIMMY~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL1W.cre~ ~override~
-	SAY 0x8 @103
-	SAY 0xC @103
-	WRITE_ASCII 0x2cc ~OLSKEL1W~
-
-COPY ~ExtraExpandedEnhancedEncounters/scripts/OLUSKEL1.BCS~ ~override~
-
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL2M.cre~ ~override~
-	SAY 0x8 @104
-	SAY 0xC @104
-	WRITE_ASCII 0x2cc ~OLSKEL2M~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL3M.cre~ ~override~
-	SAY 0x8 @105
-	SAY 0xC @105
-	WRITE_ASCII 0x2cc ~OLSKEL3M~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL4C.cre~ ~override~
-	SAY 0x8 @106
-	SAY 0xC @106
-	WRITE_ASCII 0x2cc ~OLSKEL4C~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL5C.cre~ ~override~
-	SAY 0x8 @107
-	SAY 0xC @107
-	WRITE_ASCII 0x2cc ~OLSKEL5C~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL6G.cre~ ~override~
-	SAY 0x8 @108
-	SAY 0xC @108
-	WRITE_ASCII 0x2cc ~OLSKEL6G~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLDAENNI.cre~ ~override~
-	SAY 0x8 @109
-	SAY 0xC @109
-	WRITE_ASCII 0x2cc ~OLDAENNI~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGWYVRN.cre~ ~override~
-	SAY 0x8 @110
-	SAY 0xC @110
-	WRITE_ASCII 0x2cc ~OLGWYVRN~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLFDRAKE.cre~ ~override~
-	SAY 0x8 @111
-	SAY 0xC @111
-	WRITE_ASCII 0x2cc ~OLFDRAKE~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLC.cre~ ~override~
-	SAY 0x8 @112
-	SAY 0xC @112
-	WRITE_ASCII 0x2cc ~OLGNOLLC~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLL.cre~ ~override~
-	SAY 0x8 @113
-	SAY 0xC @113
-	WRITE_ASCII 0x2cc ~OLGNOLLL~
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.BAM~ ~override~
 	
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLV.cre~ ~override~
-	SAY 0x8 @114
-	SAY 0xC @114
-	WRITE_ASCII 0x2cc ~OLGNOLLV~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLE.cre~ ~override~
-	SAY 0x8 @115
-	SAY 0xC @115
-	WRITE_ASCII 0x2cc ~OLGNOLLE~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLS.cre~ ~override~
-	SAY 0x8 @116
-	SAY 0xC @116
-	WRITE_ASCII 0x2cc ~OLGNOLLS~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLL.cre~ ~override~
-	SAY 0x8 @117
-	SAY 0xC @117
-	WRITE_ASCII 0x2cc ~OLGNOLL~
-
-
-
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM00.itm~ ~override~
-	SAY 0xC @118
-	SAY 0x54 @119
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.ITM~ ~override~
-	SAY 0xC @120
-	SAY 0x54 @121
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.BAM~ ~override~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.ITM~ ~override~
-	SAY 0xC @122
-	SAY 0x54 @123
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.BAM~ ~override~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLDART01.ITM~ ~override~
-	SAY 0xC @124
-	SAY 0x54 @125
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.ITM~ ~override~
-	SAY 0xC @126
-	SAY 0x54 @127
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.BAM~ ~override~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.ITM~ ~override~
-	SAY 0xC @128
-	SAY 0x54 @129
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.BAM~ ~override~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.ITM~ ~override~
-	SAY 0xC @130
-	SAY 0x54 @131
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.BAM~ ~override~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK1.ITM~ ~override~
-	SAY 0xC @132
-	SAY 0x54 @133
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK2.ITM~ ~override~
-	SAY 0xC @134
-	SAY 0x54 @133
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.ITM~ ~override~
-	SAY 0xC @135
-	SAY 0x54 @136
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.BAM~ ~override~
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLCBOW11.BAM~ ~override~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLBOOT04.ITM~ ~override~
-	SAY 0xC @137
-	SAY 0x54 @138
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.ITM~ ~override~
-	SAY 0xC @139
-	SAY 0x54 @140
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.BAM~ ~override~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLSW1H13.itm~ ~override~
-	SAY 0xC @141
-	SAY 0x54 @142
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.ITM~ ~override~
-	SAY 0xC @143
-	SAY 0x54 @144
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.BAM~ ~override~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.ITM~ ~override~
-	SAY 0xC @145
-	SAY 0x54 @146
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.BAM~ ~override~
-
-
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.ITM~ ~override~
-	SAY 0xC @147
-	SAY 0x54 @148
-
-COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.BAM~ ~override~
-
-
-
-
-
-
-COPY_EXISTING ~MULAHE.CRE~ ~override~
-	ADD_CRE_ITEM ~OLRING06~ #0 #0 #0 ~NONE~ ~RRING~
-
-
-
-COPY_EXISTING ~AR4501.ARE~ ~override~
-  WRITE_ASCII 0x94 ~AR4501~ #8
-  BUT_ONLY
-
-
-
-COPY_EXISTING ~AR0123.ARE~ ~override~	// Removes PLAT24
-	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "PLAT24" END
-BUT_ONLY
-
-
-
-
-
-
-EXTEND_BOTTOM ~AR0123.BCS~ ~ExtraExpandedEnhancedEncounters/OL0123.BAF~
-
-EXTEND_BOTTOM ~AR1700.BCS~ ~ExtraExpandedEnhancedEncounters/OL1700.BAF~
-
-EXTEND_BOTTOM ~AR2800.BCS~ ~ExtraExpandedEnhancedEncounters/OL2800.BAF~
-
-EXTEND_BOTTOM ~AR4400.BCS~ ~ExtraExpandedEnhancedEncounters/OL4400.BAF~
-
-EXTEND_BOTTOM ~AR4501.BCS~ ~ExtraExpandedEnhancedEncounters/OL4501.BAF~
-
-EXTEND_BOTTOM ~AR5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100.BAF~
-
-EXTEND_BOTTOM ~AR5102.BCS~ ~ExtraExpandedEnhancedEncounters/OL5102.BAF~
-
-EXTEND_BOTTOM ~AR5405.bcs~ ~ExtraExpandedEnhancedEncounters/OL5405.baf~
-
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLCBOW11.BAM~ ~override~
+
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM00.itm~ ~override~
+		SAY 0xC @118
+		SAY 0x54 @119
+
+BEGIN @3
+LABEL OL-EEEE-GNOLL-STRONGHOLD //AR5100
+
+	EXTEND_BOTTOM ~AR5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100.BAF~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLC.cre~ ~override~
+		SAY 0x8 @112
+		SAY 0xC @112
+		WRITE_ASCII 0x2cc ~OLGNOLLC~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLL.cre~ ~override~
+		SAY 0x8 @113
+		SAY 0xC @113
+		WRITE_ASCII 0x2cc ~OLGNOLLL~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLV.cre~ ~override~
+		SAY 0x8 @114
+		SAY 0xC @114
+		WRITE_ASCII 0x2cc ~OLGNOLLV~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLE.cre~ ~override~
+		SAY 0x8 @115
+		SAY 0xC @115
+		WRITE_ASCII 0x2cc ~OLGNOLLE~
+
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLS.cre~ ~override~
+		SAY 0x8 @116
+		SAY 0xC @116
+		WRITE_ASCII 0x2cc ~OLGNOLLS~
+		
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLL.cre~ ~override~
+		SAY 0x8 @117
+		SAY 0xC @117
+		WRITE_ASCII 0x2cc ~OLGNOLL~
+
+BEGIN @4
+LABEL OL-EEEE-GNOLL-STRONGHOLD-CAVE //AR5102
+
+	EXTEND_BOTTOM ~AR5102.BCS~ ~ExtraExpandedEnhancedEncounters/OL5102.BAF~
+
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.ITM~ ~override~
+		SAY 0xC @126
+		SAY 0x54 @127
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.BAM~ ~override~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.ITM~ ~override~
+		SAY 0xC @128
+		SAY 0x54 @129
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.BAM~ ~override~
+
+BEGIN @5
+LABEL OL-EEEE-XANS-NEW-GROVE //AR5405
+
+	EXTEND_BOTTOM ~AR5405.bcs~ ~ExtraExpandedEnhancedEncounters/OL5405.baf~
+	
+	COPY_EXISTING ~MULAHE.CRE~ ~override~
+		ADD_CRE_ITEM ~OLRING06~ #0 #0 #0 ~NONE~ ~RRING~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.ITM~ ~override~
+		SAY 0xC @120
+		SAY 0x54 @121
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.BAM~ ~override~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.ITM~ ~override~
+		SAY 0xC @126
+		SAY 0x54 @127
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.BAM~ ~override~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.ITM~ ~override~
+		SAY 0xC @128
+		SAY 0x54 @129
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.BAM~ ~override~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLSW1H13.itm~ ~override~
+		SAY 0xC @141
+		SAY 0x54 @142
+
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.ITM~ ~override~
+		SAY 0xC @147
+		SAY 0x54 @148
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.BAM~ ~override~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.ITM~ ~override~
+		SAY 0xC @143
+		SAY 0x54 @144
+
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.BAM~ ~override~
+
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.ITM~ ~override~
+		SAY 0xC @145
+		SAY 0x54 @146
+
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.BAM~ ~override~
+
+BEGIN @6
+LABEL OL-EEEE-CLOAKWOOD-BRIDGE //AR1700
+
+	EXTEND_BOTTOM ~AR1700.BCS~ ~ExtraExpandedEnhancedEncounters/OL1700.BAF~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLDAENNI.cre~ ~override~
+		SAY 0x8 @109
+		SAY 0xC @109
+		WRITE_ASCII 0x2cc ~OLDAENNI~
+
+	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLDAENNI.D~
+
+
+BEGIN @7
+LABEL OL-EEEE-WYVERN-CAVE //AR4501
+
+	COPY_EXISTING ~AR4501.ARE~ ~override~
+		WRITE_ASCII 0x94 ~AR4501~ #8
+		BUT_ONLY
+
+	EXTEND_BOTTOM ~AR4501.BCS~ ~ExtraExpandedEnhancedEncounters/OL4501.BAF~
+
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGWYVRN.cre~ ~override~
+		SAY 0x8 @110
+		SAY 0xC @110
+		WRITE_ASCII 0x2cc ~OLGWYVRN~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLFDRAKE.cre~ ~override~
+		SAY 0x8 @111
+		SAY 0xC @111
+		WRITE_ASCII 0x2cc ~OLFDRAKE~
+
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.ITM~ ~override~
+		SAY 0xC @130
+		SAY 0x54 @131
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.BAM~ ~override~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK1.ITM~ ~override~
+		SAY 0xC @132
+		SAY 0x54 @133
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK2.ITM~ ~override~
+		SAY 0xC @134
+		SAY 0x54 @133
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.ITM~ ~override~
+		SAY 0xC @122
+		SAY 0x54 @123
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.BAM~ ~override~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLDART01.ITM~ ~override~
+		SAY 0xC @124
+		SAY 0x54 @125
+
+BEGIN @8
+LABEL OL-EEEE-UNDERCITY //AR0123
+
+	COPY_EXISTING ~AR0123.ARE~ ~override~	// Removes PLAT24
+		LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "PLAT24" END
+		BUT_ONLY
+
+
+	EXTEND_BOTTOM ~AR0123.BCS~ ~ExtraExpandedEnhancedEncounters/OL0123.BAF~
+
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL1W.cre~ ~override~
+		SAY 0x8 @103
+		SAY 0xC @103
+		WRITE_ASCII 0x2cc ~OLSKEL1W~
+
+	COPY ~ExtraExpandedEnhancedEncounters/scripts/OLUSKEL1.BCS~ ~override~
+
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL2M.cre~ ~override~
+		SAY 0x8 @104
+		SAY 0xC @104
+		WRITE_ASCII 0x2cc ~OLSKEL2M~
+
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL3M.cre~ ~override~
+		SAY 0x8 @105
+		SAY 0xC @105
+		WRITE_ASCII 0x2cc ~OLSKEL3M~
+
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL4C.cre~ ~override~
+		SAY 0x8 @106
+		SAY 0xC @106
+		WRITE_ASCII 0x2cc ~OLSKEL4C~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL5C.cre~ ~override~
+		SAY 0x8 @107
+		SAY 0xC @107
+		WRITE_ASCII 0x2cc ~OLSKEL5C~
+
+	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL6G.cre~ ~override~
+		SAY 0x8 @108
+		SAY 0xC @108
+		WRITE_ASCII 0x2cc ~OLSKEL6G~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.ITM~ ~override~
+		SAY 0xC @139
+		SAY 0x54 @140
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.BAM~ ~override~
+
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLBOOT04.ITM~ ~override~
+		SAY 0xC @137
+		SAY 0x54 @138
