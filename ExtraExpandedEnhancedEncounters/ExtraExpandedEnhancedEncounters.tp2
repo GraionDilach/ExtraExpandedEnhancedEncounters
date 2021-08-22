@@ -3,37 +3,37 @@ AUTHOR ~Within Amnesia~
 AUTO_TRA ~ExtraExpandedEnhancedEncounters/translations/%s~
 LANGUAGE ~English~
          ~English~
-         ~ExtraExpandedEnhancedEncounters/setup.tra~
+         ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
 
 
-BEGIN ~Extra Expanded Enhanced Encounters for Baldur's Gate: Siege of Dragonspear, Version 2.0+~
+BEGIN @0
 LABEL OL-EEEE
 
-COMPILE ~ExtraExpandedEnhancedEncounters/dialogue/OLMELIAQ.D~ ~override~
+COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLMELIAQ.D~ ~override~
 
 
 
-COMPILE ~ExtraExpandedEnhancedEncounters/dialogue/OLDAENNI.D~ ~override~
+COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLDAENNI.D~ ~override~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLMELIAQ.cre~ ~override~
-	SAY 0x8 ~Melia Quicknight~
-	SAY 0xC ~Melia Quicknight~
+	SAY 0x8 @101
+	SAY 0xC @101
 	WRITE_ASCII 0x2cc ~OLMELIAQ~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLBIMMY.cre~ ~override~
-	SAY 0x8 ~Bimmy~
-	SAY 0xC ~Bimmy~
+	SAY 0x8 @102
+	SAY 0xC @102
 	WRITE_ASCII 0x2cc ~BIMMY~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL1W.cre~ ~override~
-	SAY 0x8 ~Ric'Berna~
-	SAY 0xC ~Ric'Berna~
+	SAY 0x8 @103
+	SAY 0xC @103
 	WRITE_ASCII 0x2cc ~OLSKEL1W~
 
 COPY ~ExtraExpandedEnhancedEncounters/scripts/OLUSKEL1.BCS~ ~override~
@@ -42,99 +42,99 @@ COPY ~ExtraExpandedEnhancedEncounters/scripts/OLUSKEL1.BCS~ ~override~
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL2M.cre~ ~override~
-	SAY 0x8 ~Izzy'Nildarts~
-	SAY 0xC ~Izzy'Nildarts~
+	SAY 0x8 @104
+	SAY 0xC @104
 	WRITE_ASCII 0x2cc ~OLSKEL2M~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL3M.cre~ ~override~
-	SAY 0x8 ~Ffud McKagan~
-	SAY 0xC ~Ffud McKagan~
+	SAY 0x8 @105
+	SAY 0xC @105
 	WRITE_ASCII 0x2cc ~OLSKEL3M~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL4C.cre~ ~override~
-	SAY 0x8 ~El'xaesor~
-	SAY 0xC ~El'xaesor~
+	SAY 0x8 @106
+	SAY 0xC @106
 	WRITE_ASCII 0x2cc ~OLSKEL4C~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL5C.cre~ ~override~
-	SAY 0x8 ~St. Never'Elda~
-	SAY 0xC ~St. Never'Elda~
+	SAY 0x8 @107
+	SAY 0xC @107
 	WRITE_ASCII 0x2cc ~OLSKEL5C~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL6G.cre~ ~override~
-	SAY 0x8 ~Slash~
-	SAY 0xC ~Slash~
+	SAY 0x8 @108
+	SAY 0xC @108
 	WRITE_ASCII 0x2cc ~OLSKEL6G~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLDAENNI.cre~ ~override~
-	SAY 0x8 ~Daenni~
-	SAY 0xC ~Daenni~
+	SAY 0x8 @109
+	SAY 0xC @109
 	WRITE_ASCII 0x2cc ~OLDAENNI~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGWYVRN.cre~ ~override~
-	SAY 0x8 ~Greater Wyvern~
-	SAY 0xC ~Greater Wyvern~
+	SAY 0x8 @110
+	SAY 0xC @110
 	WRITE_ASCII 0x2cc ~OLGWYVRN~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLFDRAKE.cre~ ~override~
-	SAY 0x8 ~Fire Drake~
-	SAY 0xC ~Fire Drake~
+	SAY 0x8 @111
+	SAY 0xC @111
 	WRITE_ASCII 0x2cc ~OLFDRAKE~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLC.cre~ ~override~
-	SAY 0x8 ~Gnoll Chieftain~
-	SAY 0xC ~Gnoll Chieftain~
+	SAY 0x8 @112
+	SAY 0xC @112
 	WRITE_ASCII 0x2cc ~OLGNOLLC~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLL.cre~ ~override~
-	SAY 0x8 ~Gnoll Lieutenant~
-	SAY 0xC ~Gnoll Lieutenant~
+	SAY 0x8 @113
+	SAY 0xC @113
 	WRITE_ASCII 0x2cc ~OLGNOLLL~
 	
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLV.cre~ ~override~
-	SAY 0x8 ~Gnoll Veteran~
-	SAY 0xC ~Gnoll Veteran~
+	SAY 0x8 @114
+	SAY 0xC @114
 	WRITE_ASCII 0x2cc ~OLGNOLLV~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLE.cre~ ~override~
-	SAY 0x8 ~Gnoll Elite~
-	SAY 0xC ~Gnoll Elite~
+	SAY 0x8 @115
+	SAY 0xC @115
 	WRITE_ASCII 0x2cc ~OLGNOLLE~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLS.cre~ ~override~
-	SAY 0x8 ~Gnoll Slasher~
-	SAY 0xC ~Gnoll Slasher~
+	SAY 0x8 @116
+	SAY 0xC @116
 	WRITE_ASCII 0x2cc ~OLGNOLLS~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLL.cre~ ~override~
-	SAY 0x8 ~Gnoll~
-	SAY 0xC ~Gnoll~
+	SAY 0x8 @117
+	SAY 0xC @117
 	WRITE_ASCII 0x2cc ~OLGNOLL~
 
 
@@ -143,139 +143,72 @@ COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLL.cre~ ~override~
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM00.itm~ ~override~
-	SAY 0xC ~Helmet~
-	SAY 0x54 ~This class of open-face helmet, made of reinforced leather or metal, covers most of the head save the face and neck. These helmets commonly provide protection for the nose.
-
-STATISTICS:
-
-Equipped abilities:
-� Protects against critical hits
-
-Weight: 2~
+	SAY 0xC @118
+	SAY 0x54 @119
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.ITM~ ~override~
-	SAY 0xC ~Ring of Accurate Striking +1~
-	SAY 0x54 ~Rings of accurate striking are not very common among the realms but they do tend to emerge from time to time upon the journeys of wayward adventurers. This magical ring may seem like an ordinary ring with some adornment set with an obsidian black gem stone that draws in one's eye; but in the heat of battle the ring glows slightly and becomes warm to the touch. One's hands seem to glide on their own exposing weakness in an opponents' stance and defences when one is wearing of one of these rings and bares to strike with a melee weapon. These magnificent magical rings are often given to apprentices of nobles and the like of deep purses to better enhance one's melee abilities after their graduation from apprentice to journeymen in the messy business of melee combat. As of thus these rings are highly sought after by all of whom swing a blade or stout blunt force trauma weapon. Much like the greater variants of magical items that increase one's weapon skill and prowess these rings grant lethal ability but not the wisdom to remain alive to keep such skill.
-
-STATISTICS:
-
-Equipped Abilities:
-- Melee THAC0: +2~
+	SAY 0xC @120
+	SAY 0x54 @121
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.BAM~ ~override~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.ITM~ ~override~
-	SAY 0xC ~Ring of Accurate Striking +2~
-	SAY 0x54 ~Rings of accurate striking to such a degree of power as this ring are exceedingly rare among the realms but they do tend to emerge from time to time upon the bloodied paths carved out by champions of blood and steel in the endless churn of lives and deaths; felling swaths of lesser beings beneath their insatiable wrath. This magical ring is immaculately crafted by a master jeweller with a pure gold band enchanted with strong magical enchantments. The centrepiece of the ring is an obsidian black gemstone set masterfully in the ring from behind the band; a crafting feat that is very difficult indeed. The impenetrable black of the jewel centre-forth almost seems to demand one's eye. When blood flows, bones break and flesh rends the midnight black gem glows with authority and simmers with almost a will of its own upon one's grasp. The blood-hungry band pulls at one's hands with a mind of its own, guiding the wearers melee strikes to the folly of one's opponents. These incredibly effective magical rings are often the pride of any sellsword or champion of bloodied battle. Frequently one of these rings will land the owner in fierce duels of life and death for the right to wield one such of these rings. Masters at arms have killed for less than what one possesses and if one is to don such a powerful magical boon one should embrace the path of the bloodshed left by such rings; or act to conceal such items from any would-be next master of blood and steel.
-
-STATISTICS:
-
-Equipped Abilities:
-- Melee THAC0: +3~
+	SAY 0xC @122
+	SAY 0x54 @123
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.BAM~ ~override~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLDART01.ITM~ ~override~
-	SAY 0xC ~Dart +2 'Zaldor's Mage Slayer'~
-	SAY 0x54 ~This magic dart has slain many mages and non-mages alike. Once upon a time this dart was crafted by the Moon Elf Mage/Thief Zaldor Silentspell some 500 years ago near the city of Berdusk to help him win duels with rival mages. This magical dart was enchanted by Zaldor to engulf a target in disruptive magical energy on a successful strike to help throw off an opponent's spellcasting in combat. Zaldor grew tired of having to replace expensive magical darts; so with great effort and expense he successfully enchanted his magical dart to return to his hand once thrown. Although the enchanted dart is deadly, Zaldor himself mostly used the weapon to defeat his rivals in duels and not to slain them outright. Zaldor Silentspell only slew a few enemies with his prized magical dart in his day. It was his descendants that truly wreaked havoc across the Sword Coast with this powerful weapon. Eventually his great grandson Xarnor Silentspell fell in combat; losing the dart during a raid in the Cloakwood Forest to slay a gigantic wyvern.
-
-STATISTICS:
-
-Combat abilities:
-- Returns to the wielder's hand when thrown
-
-THAC0: +2
-Damage: 1d3+2, +1 magic damage
-Damage type: Missile
-Speed Factor: 0
-Proficiency Type: Dart
-Type: One-handed
-
-Weight: 0 lb.~
+	SAY 0xC @124
+	SAY 0x54 @125
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.ITM~ ~override~
-	SAY 0xC ~Potion of Additional Healing~
-	SAY 0x54 ~When wholly consumed, this potion restores 15 Hit Points to the person. The effect is instantaneous and the potion is destroyed in the process.
-
-STATISTICS:
-
-Special: Restores 15 Hit Points.
-
-Weight: 1 lb.~
+	SAY 0xC @126
+	SAY 0x54 @127
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.BAM~ ~override~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.ITM~ ~override~
-	SAY 0xC ~Potion of Remarkable Healing~
-	SAY 0x54 ~When wholly consumed, this potion restores 21 Hit Points to the person. The effect is instantaneous and the potion is destroyed in the process.
-
-STATISTICS:
-
-Special: Restores 21 Hit Points.
-
-Weight: 1 lb.~
+	SAY 0xC @128
+	SAY 0x54 @129
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.BAM~ ~override~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.ITM~ ~override~
-	SAY 0xC ~Fire Drake Scales~
-	SAY 0x54 ~These fire drake scales are as hard as stone, yet as flexible as boot leather. If worked properly by a master crafter these fire drake scales could yield an excellent shield, suit of armor or perhaps even a defensive pleated skirt. The world is bourn wide open to the bold.
-
-STATISTICS:
-
-Weight: 7 lb.~
+	SAY 0xC @130
+	SAY 0x54 @131
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.BAM~ ~override~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK1.ITM~ ~override~
-	SAY 0xC ~Fire Drake Teeth~
-	SAY 0x54 ~Sneaky sneaky, indeed.
-
-STATISTICS:
-
-Weight: 0 lb.~
+	SAY 0xC @132
+	SAY 0x54 @133
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK2.ITM~ ~override~
-	SAY 0xC ~Fire Drake Breath~
-	SAY 0x54 ~Sneaky sneaky, indeed.
-
-STATISTICS:
-
-Weight: 0 lb.~
+	SAY 0xC @134
+	SAY 0x54 @133
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.ITM~ ~override~
-	SAY 0xC ~Composite Longbow +2 'Strong Arm'~
-	SAY 0x54 ~This massive bow was the property of the ranger Bearpaw, who reportedly received it from a strangely benevolent ogre. The reason for the gift was never discussed, but he earned the respect of everyone he met, and likely befriended the creature while patrolling the Cloakwood Forest. Bearpaw could draw back the bow without the slightest effort, but when he died it was bequeathed to his wife and sons, and not a one could draw the string even halfway. They eventually sold it to a merchant heading south.
-
-STATISTICS:
-
-THAC0: +3
-Damage: +3 (missile)
-Speed Factor: 4
-Proficiency Type: Longbow
-Type: Two-handed
-Requires:
- 19 Strength
-
-Weight: 7 lb.~
+	SAY 0xC @135
+	SAY 0x54 @136
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.BAM~ ~override~
 
@@ -284,133 +217,44 @@ COPY ~ExtraExpandedEnhancedEncounters/items/OLCBOW11.BAM~ ~override~
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLBOOT04.ITM~ ~override~
-	SAY 0xC ~Boots of Avoidance~
-	SAY 0x54 ~Boots of Avoidance
-These magical boots are sought after from all sorts of combatants whom seek an edge against ranged foes. Boots of this variety are designed to detect incoming missiles and aid the wearer in avoiding them. These boots grant a significant boon to the wear yet over confident wearers might think themselves as invulnerable to incoming arrows and bolts and the like; yet such a way of thinking tends to put one in an early grave. These boots are powerful yet they are not infallible and the odd projectile will still reach the wearer.
-
-STATISTICS:
-
-Equipped abilities: 
-- Armor Class: +5 vs. missile attacks
-
-Weight: 4~
+	SAY 0xC @137
+	SAY 0x54 @138
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.ITM~ ~override~
-	SAY 0xC ~Plate Mail +2 'The Magma Bulwark'~
-	SAY 0x54 ~Forged by the fire giant Varboti as a gift for a Cormyrian general who made peace with his clan, this red-and-black armor lends its wearer a molten aspect while providing protection against all but the most powerful blows. Due to its incredibly strong but thin material, it also weighs far less than ordinary plate mail.
-
-STATISTICS:
-
-Armor Class: 1 (-2 vs. slashing)
-Requires:
- 12 Strength
-
-Weight: 20~
+	SAY 0xC @139
+	SAY 0x54 @140
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.BAM~ ~override~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLSW1H13.itm~ ~override~
-	SAY 0xC ~Moonblade +3~
-	SAY 0x54 ~This potent weapon is extremely ancient as of thousands of years of age and was created by the smiths of ancient Myth Drannor before The Fall in 711 DR. Each Moonblade is unique and has a highly magical if not divine moonstone crystal set in the pommel as well as having a Mythal placed upon each blade; making these kinds of swords as no regular enchanted weapon in the realms but rather deservedly legendary artifact weapons. Moonblades are used in the long process of selecting a ruler for the isle of Evermeet. As in of which Moonblades can be described as literal 'king makers' or 'king destroyers' at heart; as was such the case with the mightiest of Moonblades named the King's Blade. Xan's Moonblade is a relic of an age long past and is a veteran of the Weeping War which calumniated in The Fall of Myth Drannor by the Army of Darkness. In of which an ancient wielder or heir of this blade retreated to the Isle of Evermeet after The Fall in 714 DR. Then 175 years after The Fall in 889 DR in Leuthilspar the capital of the island nation of Evermeet a new form a single monarchy was taken into being after another survivor Moonblade of Myth Drannor, the King's Blade had its Bladerite choose its new wielder Zaor Moonflover; who was crowned thus after as King of Evermeet. Xan's Moonblade is one of only 25 active Moonblades out of 300-400 remaining dormant in all of the entirety of the realms. A Moonblade chooses its owner via an ancient ritual known as Bladerite; and in the case of this sword it has chosen the elf, Xan. Only Xan can use this blade and every Moonblade burns to the touch by non-wielders. If anyone else is trying to be chosen by the Moonblade to become its new wielder and is rejected by the Moonblade's Bladerite, one will find themselves unable to lift the weapon and will immediately burst into white flames and nigh guarantee their own death. Additionally it is argued that only those of a bloodline of royal Elven blood may wield a Moonblade; but that can be argued or perhaps overcome by exceptional heroic endeavours by a person of Elven heritage undergoing a Bladerite. Every wielder of a Moonblade imparts a power into the blade, perhaps in the shape a rune. Other Moonblades are known to have up to nine or more runes emblazoned upon the weapon; with each rune hearkening to an individual wielder. Every Moonblade has the ability of Elfshadow in which the sword can duplicate its current wielder as much like wizard spell Simulacrum. All Moonblades are a special breed of relics that drain the life force of whatever foe they strike; such as in the case of life stealing. Moonblades are known to also be disruptive with magical energies and each Moonblade can vary case to case given the uniqueness of every blade and of their ancient line of past and present wielders; as chosen by their individual ritual Bladerites. All Moonblades are extremely powerful against Undead as of literately boiling them on contact. Xan's Moonblade is a force to be reckoned with in its current state granting the wielder Xan many protective powers against both magical and physical threats; as well as empowering Xan with greater spell casting ability and martial prowess. Furthermore if this mighty elven blade is properly awakened the ancient latent powers within can be drawn upon; heralding from its forging in Myth Drannor to its long history touching upon its ancient line of wielders chosen by the Moonblade's ritual of Bladerite.
-
-STATISTICS:
-
-Equipped Abilities:
-- Armor Class: +1
-- Fire Resistance: +50%
-- Magical Fire Resistance: +50%
-- Magic Resistance: +10%
-- Caster Level: +1
-- 1/2 of an extra attack per round
-- Grants Proficient (one slot) in Long Sword weapon proficiency
-
-Combat Abilities:
-- Inflict 1 magical fire damage per strike upon a target to heal the wielder for 1 hit point
-
-Charge Abilities:
-- Elfshadow once per day for 10 rounds creating a magical duplicate of the wielder much like the wizard spell Simulacrum
-
-THAC0: +3, +5 vs. undead
-Damage: 1d8+3, +5 vs. undead
-Damage type: Slashing
-Speed Factor: 2
-Proficiency Type: Long Sword
-Type: One-handed
-
-Weight: 3 lb.~
+	SAY 0xC @141
+	SAY 0x54 @142
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.ITM~ ~override~
-	SAY 0xC ~Elven Chain Mail +1 'Mail of the Evereskan Tomb Guardian'~
-	SAY 0x54 ~This fine mastercraft magical suit of elven chain mail armor protects the wearer from physical attacks as well as providing no hindrance to one's spellcasting ability. This magical elven chain mail armor hails from the ancient elven settlement of Evereska and has spent many decades in the employment of Evereska's Tomb Guardians; of whom used magic, guile and duty to defend the places of burial for their honored deceased. Few things are more sacred to the elves of Evereska than the bodies of their dead. Countless great leaders, heroes, and scholars of the Fortress Home are buried in tombs scattered throughout the region, and the elves consider these sites inviolable. Unfortunately, the tombs also contain priceless magic treasures crafted by the elves of old, and the thought of such booty leads many looters to test the elves' defenses. The Evereskan tomb guardians are on hand to ensure that these defenses are very good indeed. Each tomb guardian swears a solemn oath to track grave robbers to the ends of the realms and beyond, and never to rest until the defilers have been slain. To the elves of Evereska, nothing was more sacred than the bodies of the deceased and the countless tombs of great ancestors and heroes scattered around the region. Unfortunately, the tales of buried treasures and magic items attracted many adventurers and defilers, seeking to strip the tombs of their precious items. Tombs east of Evereska, on the border of the Anauroch desert, were frequently patrolled by tomb guardians, as they were a regular target of human and humanoid tomb robbers. Some tombs belonged to hated long-dead elven families, but nonetheless the tomb guardians upheld their oaths to protect these burial places. As a result of constant distrust of outsiders, the elves of Evereska enchanted this elven bulwark with magical energies that enhance and further protect the wearer of this immaculate suit of finely wolven elven chain mail armor; yet also act to restrict its use to only those of Elven descent and of appropriate dedications.
-
-STATISTICS:
-
-Equipped Abilities:
-- Dexterity: +1
-- THAC0: +1
-- Hit Points: +20
-- Can memorize two extra 3rd-level wizard spells
-- Spellcasting is not disabled
-
-Armor Class: 4 (2 vs. slashing, 6 vs. crushing)
-Requires:
-11 Strength
-15 Dexterity
-14 Intelligence
-12 Wisdom
-13 Charisma
-
-Weight: 6 lb.~
+	SAY 0xC @143
+	SAY 0x54 @144
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.BAM~ ~override~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.ITM~ ~override~
-	SAY 0xC ~Band of Protection +1 'Band of the Missing Page'~
-	SAY 0x54 ~This magically augmented band of protection was created for some of the more magically astute members of an order known as the Knaves of the Missing Pages based out of Evereska. The magical enchantments placed upon this finely crafted and equally robust headband imbues upon the wearer a general fortitude. Moreover the largest of the three enchanted moonstone gems adorning the brow of the enchanted band provides a protective force field around one's skull that protects it such as a regular ironclad helm would yet without the encumbrance. Once worn one is also empowered into a state of dominion over the spell Find Traps in as to which the wearer is enabled to cast the spell three times a day; the magic recharges after a full day of rest. The Knaves of the Missing Page are a special breed of rogue wizards. They master and combine their knowledge of spells with their utter love of mischief, larceny and intrigue. They are a notable example of spellfilchers that are based in the vale of Evereska but are active all throughout the realms. There are even some Knaves of the Missing Page in the ranks of the much lesser-known elven thieves guild in Everlund called The Rogues of the Laughing Twilight. The Knaves of the Missing Page work well with the clergy of Erevan, especially with Divine Seekers and Mischiefmakers, but also just as well with Thief-Acrobats, Shadowdancers and Temple Raiders of Erevan Ilesere. They are among the realms's most powerfully skilled thieves and wont hesitate to cast a Delayed-blast Meteor Swarm in the main chapel of a rival deity, or cast Flensing on an opponent after having stolen a priceless item or artifact from them. They are often sent on highly dangerous missions to retrieve stolen elven artifacts and magic items from other churches and races.
-
-STATISTICS:
-
-Equipped Abilities:
-- Protects against critical hits
-- Hit Points: +5
-
-Charge Abilities:
-- Cast Find Traps spell at level 10 three times per day
-
-Requires:
-15 Dexterity
-12 Intelligence
-
-Weight: 1 lb.~
+	SAY 0xC @145
+	SAY 0x54 @146
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.BAM~ ~override~
 
 
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.ITM~ ~override~
-	SAY 0xC ~Buckler +2 'Buckler of Unexpected Might'~
-	SAY 0x54 ~Buckler of Unexpected Might or also less commonly know as, but rather more controversially the Existentialist's Arm. This particular buckler is very old and began its life as a mere heraldric wall adornment for a particularly wealthy noble family hailing from the trading port city of West Gate. The once proud family crest is now indecipherable from having been angrily dashed and defiled and a new overlaid symbol of the 6th Level Mage Spell Tenser's Transformation has been imprinted upon its boss. As the story goes, of which many noble Westhavian historians disagree and refute with one another for most of the records are blurry, bloodied and rewritten at best; but most can agree upon these following basic details. Around 257 to 260 DR the trading port city of West Gate also knows as the 'Gateway to the west' -from the Inner Sea to the east- was successfully invaded and the ruling powers were seized and violently replaced by pirate forces from the Pirate Isles. The inflicting upheaval of the ruling families brought much turmoil upon the city's wealthiest families of trade for they were forced into extortion and unfair trade laws and heavy taxation upon their family operations. A great deal of sources argue and contradict one another over which noble family's house has this buckler associated with its tumultuous history but most all historians will say that the buckler transformed into its current form soon after the new unfair jurisdiction of the recent self-proclaimed 'Pirate King of West Gate'. Most sources agree upon that after a particularly heavy taxation of trade was placed upon the wealthiest of noble merchant families of West Gate it caused one highly regarded noble to speak out against the heavy taxation. The following high noon the influential nobleman was slain outright by a gang of the King's pirates within the city's market in broad daylight, in view and a stone's throw from most noble trade family's major buildings of operation. This was seen by the trade families as a draconian declaration of unquestioning agreement of the new taxation or a swift heinous death. From here the story begins to fall apart and spiral into a contradiction of major details and heated debate among the leading historians of West Gate. Although a few details remain coherent and concise. Soon after the wicked and untimely death of a particularly charismatic noble of one of West Gate's influential trade families a young noble Half-Elven Mage or Arcane Spellcaster was pressured to align with the corrupt ruling party of the Pirate King or with an outside Cormyrian force wishing to overthrow the ruling party from within. The sources argue fiercely over the next few brief segments of the story but most agree that the Half-Elven Spellcaster did not choose a side and violently departed on bad terms from their noble house of West Gate. As to ask why that was in the wrong places of West Gate could result in heated shouting matches, violent brawls and even facticidal bloodshed in between of some of West Gate's more questionable of noble houses. Many believe that the once young noble Half-Elven Spellcaster is to be of the same blue blood as the last true king of West Gate and the sole survivor of the king's blood after the pirate upheaval. As a result of this violent debate there has been much clandestine bloodshed among some of the long existing noble families from time to time. Some of the noble families argue that they should rule the city of West Gate for they believe fiercely that their blood lineage hearkens back to the Half-Elven Spellcaster whom once owned this particular buckler. As to whether or not the the matter will resolve peacefully or will even subside is unknown but one thing is for certain, the magical enchantment placed upon this tiny shield is very very strong. Many agree that it would certainly make sense that only a very powerful or well trained Spellcaster could have placed the enchantment upon this particularly controversial bulwark. As to why and how such a strange and bizarre set of abilities and requirements were used for the unusual enchantment is an argued mystery. Also unknown is how it was used or how the uncommon magic was placed upon this item. There is a of great debate amongst historians and scholars alike over the usage and endeavours of said item; ranging from tales of great adventure to accountings of meek, cloistered cowardice and evasion. Either way of which one looks upon the history and the controversy of and or over this small yet surprisingly powerful buckler one can be sure that the shield is of surprising value and unexpected might, both physically and politically.
-
-STATISTICS:
-
-Equipped Abilities:
-- Armor Class: +3 (-2 vs. missiles, -3 vs. piercing)
-- Armor Class: +1 vs. missile attacks
-- Grants Proficient (one slot) in Sword and Shield fighting style
-
-Charge Abilities: 
-- Cast Tenser's Transformation at level 10 three times per day:
-Tenser's Transformation changes the caster into a heroic fighter for 1 round per level of the caster. Thus doubling the target's hit points, and giving them a +4 bonus to their armor class. All of the damage that the caster sustains takes away from the bonus hit points first. All of the wizard's attacks have the same chance to hit as a fighter of the same level, additionally the target is allowed to attack twice per round with a +2 damage bonus per attack.
-
-Weight: 1 lb.~
+	SAY 0xC @147
+	SAY 0x54 @148
 
 COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.BAM~ ~override~
 
