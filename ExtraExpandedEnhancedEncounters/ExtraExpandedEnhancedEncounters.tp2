@@ -7,6 +7,7 @@ LANGUAGE ~English~
 
 
 BEGIN ~Extra Expanded Enhanced Encounters for Baldur's Gate: Siege of Dragonspear, Version 2.0+~
+LABEL OL-EEEE
 
 COMPILE ~ExtraExpandedEnhancedEncounters/dialogue/OLMELIAQ.D~ ~override~
 
