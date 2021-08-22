@@ -1,5 +1,5 @@
 IF
-  Global("OL_EEEE_UMBERS","AR0123",0)
+  Global("OL_EEEE_UMBERS","MYAREA",0)
 THEN
   RESPONSE #100
     ActionOverride("Container1",DestroyItem("PLAT24"))
@@ -12,5 +12,5 @@ THEN
     CreateCreature("OLSKEL4C",[517.1153],SSE)
     CreateCreature("OLSKEL5C",[655.1116],SSE)
     CreateCreature("OLSKEL6G",[630.1235],SSE)
-    SetGlobal("OL_EEEE_UMBERS","AR0123",1)
+    SetGlobal("OL_EEEE_UMBERS","MYAREA",1)
 END

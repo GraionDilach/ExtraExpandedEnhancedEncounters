@@ -1,7 +1,7 @@
 IF
-  Global("OL_EEEE_BIMMY","AR4400",0)
+  Global("OL_EEEE_BIMMY","MYAREA",0)
 THEN
   RESPONSE #100
     CreateCreature("OLBIMMY",[3188.1672],S)
-    SetGlobal("OL_EEEE_BIMMY","AR4400",1)
+    SetGlobal("OL_EEEE_BIMMY","MYAREA",1)
 END

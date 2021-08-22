@@ -1,8 +1,8 @@
 IF
-  Global("OL_EEEE_DAENNI","AR1700",0)
+  Global("OL_EEEE_DAENNI","MYAREA",0)
 THEN
   RESPONSE #100
-    SetGlobal("OL_EEEE_DAENNI","AR1700",1)
+    SetGlobal("OL_EEEE_DAENNI","MYAREA",1)
     CreateCreature("OLDAENNI",[2623.2953],SW)
     CreateCreature("IRONELIT",[2645.2973],SW)
     CreateCreature("IRONELIT",[2615.2929],SW)

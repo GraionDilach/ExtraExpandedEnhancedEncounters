@@ -1,5 +1,5 @@
 IF
-  Global("OL_EEEE_GNOLL_CAVE","AR5102",0)
+  Global("OL_EEEE_GNOLL_CAVE","MYAREA",0)
 THEN
   RESPONSE #100
     CreateCreature("BDBEARCA",[317.217],SE)
@@ -13,5 +13,5 @@ THEN
     ActionOverride("Container1",CreateItem("SW1H49",0,0,0))
     ActionOverride("Container1",CreateItem("SHLD17",0,0,0))
     ActionOverride("Container1",CreateItem("BDLEAT08",0,0,0))
-    SetGlobal("OL_EEEE_GNOLL_CAVE","AR5102",1)
+    SetGlobal("OL_EEEE_GNOLL_CAVE","MYAREA",1)
 END

@@ -1,8 +1,8 @@
 IF
-  Global("OL_EEEE_GNOLLS","AR5100",0)
+  Global("OL_EEEE_GNOLLS","MYAREA",0)
 THEN
   RESPONSE #100
-    SetGlobal("OL_EEEE_GNOLLS","AR5100",1)
+    SetGlobal("OL_EEEE_GNOLLS","MYAREA",1)
     CreateCreature("OLGNOLLC",[1838.407],NE)
     CreateCreature("OLGNOLLL",[1897.419],NE)
     CreateCreature("OLGNOLLL",[1292.580],N)

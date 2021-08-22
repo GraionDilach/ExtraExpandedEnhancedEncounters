@@ -1,5 +1,5 @@
 IF
-  Global("OL_Xans_New_Groove","AR5405",0)
+  Global("OL_Xans_New_Groove","MYAREA",0)
 THEN
   RESPONSE #100
     ActionOverride("Container1",DestroyItem("POTN18"))
@@ -47,5 +47,5 @@ THEN
     ActionOverride("Container1",CreateItem("RNDTRE04",0,0,0))
     ActionOverride("Container1",CreateItem("RNDTRE05",0,0,0))
     ActionOverride("Container1",CreateItem("RNDTRE05",0,0,0))
-    SetGlobal("OL_Xans_New_Groove","AR5405",1)
+    SetGlobal("OL_Xans_New_Groove","MYAREA",1)
 END
