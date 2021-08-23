@@ -145,6 +145,12 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		BUT_ONLY
 	END
 
+	// Prevent spawning the Fission Slime if Aaron from Ascalon's Questpack - Feast of Gnolls already occupies the cell
+	ACTION_IF NOT FILE_EXISTS_IN_GAME ~ACQ12002.CRE~
+	BEGIN
+		EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100FS.BAF~
+	END
+
 BEGIN @4
 LABEL OL-EEEE-GNOLL-STRONGHOLD-CAVE //AR5102
 REQUIRE_PREDICATE (FILE_EXISTS_IN_GAME ~bdcaelar.cre~) @10  // explicitly relies on SoD content, skipping on BGEE

@@ -224,5 +224,4 @@ THEN
     CreateCreature("OLGNOLLS",[1097.36],E)
     CreateCreature("OLGNOLL",[4990.35],E)
     CreateCreature("JELLMU",[825.1331],SE)
-    CreateCreature("JELLSPA",[355.1456],W)
 END
