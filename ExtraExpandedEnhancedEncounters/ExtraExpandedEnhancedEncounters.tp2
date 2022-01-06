@@ -9,11 +9,13 @@ ALWAYS
 	ACTION_IF GAME_IS ~bgee~
 	BEGIN
 		OUTER_SPRINT "area_prefix" AR
+		OUTER_SET isEET = 0
 	END
 		
 	ACTION_IF GAME_IS ~eet~
 	BEGIN
 		OUTER_SPRINT "area_prefix" BG
+		OUTER_SET isEET = 1
 	END
 END
 
@@ -133,7 +135,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100S.BAF~
 	END
 
-	ACTION_IF GAME_IS ~eet~
+	ACTION_IF isEET == 1
 	BEGIN
 		COPY_EXISTING_REGEXP GLOB ~OLGNOL.*\.cre~ ~override~
 			WRITE_LONG BATTLE_CRY1 205512
@@ -231,7 +233,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 
 	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLDAENNI.D~
 	
-	ACTION_IF GAME_IS ~eet~
+	ACTION_IF isEET == 1
 	BEGIN
 		COPY_EXISTING ~OLDAENNI.cre~ ~override~
 			WRITE_LONG INITIAL_MEETING 211129
@@ -246,9 +248,18 @@ BEGIN @7
 LABEL OL-EEEE-WYVERN-CAVE //AR4501
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 
-	COPY_EXISTING ~%area_prefix%4501.ARE~ ~override~
-		WRITE_ASCII 0x94 ~%area_prefix%4501~ #8
-		BUT_ONLY
+		ACTION_IF isEET == 1
+		BEGIN
+			COPY_EXISTING ~%area_prefix%4501.ARE~ ~override~
+				WRITE_ASCII 0x94 ~BG4501~ #8
+			BUT_ONLY
+		END
+		ELSE
+		BEGIN
+			COPY_EXISTING ~%area_prefix%4501.ARE~ ~override~
+				WRITE_ASCII 0x94 ~AR4501~ #8
+			BUT_ONLY
+		END
 
 	EXTEND_BOTTOM ~%area_prefix%4501.BCS~ ~ExtraExpandedEnhancedEncounters/OL4501.BAF~
 
@@ -367,7 +378,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 			BUT_ONLY
 	END
 
-	ACTION_IF GAME_IS ~eet~
+	ACTION_IF isEET == 1
 	BEGIN
 		COPY_EXISTING_REGEXP GLOB ~OLSKEL.*\.cre~ ~override~
 			WRITE_LONG BATTLE_CRY1 205140
