@@ -37,14 +37,14 @@ Equipped abilities:
 - Protects against critical hits
 
 Weight: 2~
-@120   = ~Ring of Accurate Striking +1~
+@120   = ~Ring of Accurate Striking +2~
 @121   = ~Rings of accurate striking are not very common among the realms but they do tend to emerge from time to time upon the journeys of wayward adventurers. This magical ring may seem like an ordinary ring with some adornment set with an obsidian black gem stone that draws in one's eye; but in the heat of battle the ring glows slightly and becomes warm to the touch. One's hands seem to glide on their own exposing weakness in an opponents' stance and defences when one is wearing of one of these rings and bares to strike with a melee weapon. These magnificent magical rings are often given to apprentices of nobles and the like of deep purses to better enhance one's melee abilities after their graduation from apprentice to journeymen in the messy business of melee combat. As of thus these rings are highly sought after by all of whom swing a blade or stout blunt force trauma weapon. Much like the greater variants of magical items that increase one's weapon skill and prowess these rings grant lethal ability but not the wisdom to remain alive to keep such skill.
 
 STATISTICS:
 
 Equipped Abilities:
 - Melee THAC0: +2~
-@122   = ~Ring of Accurate Striking +2~
+@122   = ~Ring of Accurate Striking +3~
 @123   = ~Rings of accurate striking to such a degree of power as this ring are exceedingly rare among the realms but they do tend to emerge from time to time upon the bloodied paths carved out by champions of blood and steel in the endless churn of lives and deaths; felling swaths of lesser beings beneath their insatiable wrath. This magical ring is immaculately crafted by a master jeweller with a pure gold band enchanted with strong magical enchantments. The centrepiece of the ring is an obsidian black gemstone set masterfully in the ring from behind the band; a crafting feat that is very difficult indeed. The impenetrable black of the jewel centre-forth almost seems to demand one's eye. When blood flows, bones break and flesh rends the midnight black gem glows with authority and simmers with almost a will of its own upon one's grasp. The blood-hungry band pulls at one's hands with a mind of its own, guiding the wearers melee strikes to the folly of one's opponents. These incredibly effective magical rings are often the pride of any sellsword or champion of bloodied battle. Frequently one of these rings will land the owner in fierce duels of life and death for the right to wield one such of these rings. Masters at arms have killed for less than what one possesses and if one is to don such a powerful magical boon one should embrace the path of the bloodshed left by such rings; or act to conceal such items from any would-be next master of blood and steel.
 
 STATISTICS:
@@ -211,3 +211,4 @@ Charge Abilities:
 Tenser's Transformation changes the caster into a heroic fighter for 1 round per level of the caster. Thus doubling the target's hit points, and giving them a +4 bonus to their armor class. All of the damage that the caster sustains takes away from the bonus hit points first. All of the wizard's attacks have the same chance to hit as a fighter of the same level, additionally the target is allowed to attack twice per round with a +2 damage bonus per attack.
 
 Weight: 1 lb.~
+
