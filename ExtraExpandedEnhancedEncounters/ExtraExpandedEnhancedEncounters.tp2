@@ -37,11 +37,11 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0xC @101
 		WRITE_ASCII 0x2cc ~OLMELIAQ~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.ITM~ ~override~
-			SAY 0xC @120
-			SAY 0x54 @121
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING07.ITM~ ~override~
+			SAY 0xC @149
+			SAY 0x54 @150
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.BAM~ ~override~
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING07.BAM~ ~override~
 	
 	ACTION_IF GAME_IS ~eet~
 	BEGIN
