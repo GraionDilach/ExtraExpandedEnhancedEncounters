@@ -77,10 +77,6 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.BAM~ ~override~
 	
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLCBOW11.BAM~ ~override~
-
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM00.itm~ ~override~
-		SAY 0xC @118
-		SAY 0x54 @119
 	
 	ACTION_IF GAME_IS ~eet~
 	BEGIN
