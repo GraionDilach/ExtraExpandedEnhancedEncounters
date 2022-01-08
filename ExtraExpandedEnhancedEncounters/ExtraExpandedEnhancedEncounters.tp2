@@ -339,9 +339,8 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0xC @108
 		WRITE_ASCII 0x2cc ~OLSKEL6G~
 	
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.ITM~ ~override~
-		SAY 0xC @139
-		SAY 0x54 @140
+	COPY_EXISTING ~PLAT24.ITM~ ~override~
+		WRITE_ASCII 0x3A ~OLPLAT24~
 	
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.BAM~ ~override~
 
