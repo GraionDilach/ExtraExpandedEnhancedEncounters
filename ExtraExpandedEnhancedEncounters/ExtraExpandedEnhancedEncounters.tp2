@@ -173,6 +173,8 @@ BEGIN @5
 LABEL OL-EEEE-XANS-NEW-GROVE //AR5405
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 
+	INCLUDE ~ExtraExpandedEnhancedEncounters/library/macros.tpa~
+
 	EXTEND_BOTTOM ~%area_prefix%5405.bcs~ ~ExtraExpandedEnhancedEncounters/OL5405.baf~
 	
 	COPY_EXISTING ~MULAHE.CRE~ ~override~
@@ -196,9 +198,28 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 	
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.BAM~ ~override~
 	
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLSW1H13.itm~ ~override~
-		SAY 0xC @141
+	OUTER_SET simulacrum = 26632
+
+	ACTION_IF isEET == 1
+	BEGIN
+		OUTER_SET simulacrum = 226632
+	END
+
+	COPY_EXISTING ~SW1H13.ITM~ ~override~
+		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 233 target = 1 parameter1 = 1 parameter2 = (96 + (0x10000 * 1)) timing = 2 insert_point = 9999 END
+		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 1 target = 1 parameter1 = 6 timing = 2 insert_point = 9999 END
+		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter2 = 2 timing = 2 insert_point = 9999 STR_VAR resource = ~UNDEDHIT~ END
+		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 344 target = 1 parameter1 = 4 parameter2 = 3 timing = 2 special = 5 insert_point = 9999 END
+		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 191 target = 1 parameter1 = 1 timing = 2 insert_point = 9999 END
+		LPF ADD_ITEM_EFFECT INT_VAR opcode = 177 parameter1 = 4 parameter2 = 3 timing = 1 header = 1 type = 1 STR_VAR resource = ~SW1H79~ END
+		LPF ADD_ITEM_EFFECT INT_VAR opcode = 12 target = 2 parameter1 = 1 parameter2 = (0x10000 * 64) special = 8 header = 1 type= 1 END
+		LPF ADD_ITEM_HEADER INT_VAR target = 5 required_id = 1 range = 1 charges = 1 flags = 2048 STR_VAR icon = ~ISW1H13~ END
+		LPF ADD_ITEM_EFFECT INT_VAR opcode = 236 power = 8 target = 1 parameter2 = 3 duration = 60 resist_dispel = 1 END
+		LPF ADD_ITEM_EFFECT INT_VAR opcode = 233 target = 1 parameter1 = 3 parameter2 = 127 duration = 60 resist_dispel = 1 END
+		LPF ADD_ITEM_EFFECT INT_VAR opcode = 215 target = 1 timing = 1 resist_dispel = 2 duration = 3 STR_VAR resource = ~SPPROIMG~ END
+		LPF ADD_ITEM_EFFECT INT_VAR opcode = 206 power = 8 target = 1 parameter1 = %simulacrum% resist_dispel = 1 STR_VAR resource = ~SPWI804~ END
 		SAY 0x54 @142
+	BUT_ONLY
 
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.ITM~ ~override~
 		SAY 0xC @147

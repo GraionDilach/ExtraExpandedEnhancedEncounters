@@ -2,7 +2,6 @@ IF
   Global("OL_Xans_New_Groove","MYAREA",0)
 THEN
   RESPONSE #100
-    ActionOverride("Container1",DestroyItem("SW1H13"))
     ActionOverride("Container1",CreateItem("OLPOTN01",0,0,0))
     ActionOverride("Container1",CreateItem("OLPOTN02",0,0,0))
     ActionOverride("Container1",CreateItem("DART01",80,0,0))
@@ -11,7 +10,6 @@ THEN
     ActionOverride("Container1",CreateItem("SCRL95",0,0,0))
     ActionOverride("Container1",CreateItem("SCRL98",0,0,0))
     ActionOverride("Container1",CreateItem("SCRL1P",0,0,0))
-    ActionOverride("Container1",CreateItem("OLSW1H13",1,1,1))
     ActionOverride("Container1",CreateItem("OLSHLD02",1,0,0))
     ActionOverride("Container1",CreateItem("OLCHAN01",0,0,0))
     ActionOverride("Container1",CreateItem("OLHELM21",3,0,0))
