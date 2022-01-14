@@ -157,18 +157,6 @@ REQUIRE_PREDICATE (FILE_EXISTS_IN_GAME ~bdcaelar.cre~) @10  // explicitly relies
 
 	EXTEND_BOTTOM ~%area_prefix%5102.BCS~ ~ExtraExpandedEnhancedEncounters/OL5102.BAF~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.ITM~ ~override~
-		SAY 0xC @126
-		SAY 0x54 @127
-	
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.BAM~ ~override~
-	
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.ITM~ ~override~
-		SAY 0xC @128
-		SAY 0x54 @129
-	
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.BAM~ ~override~
-
 BEGIN @5
 LABEL OL-EEEE-XANS-NEW-GROVE //AR5405
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
@@ -185,18 +173,6 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0x54 @121
 	
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.BAM~ ~override~
-	
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.ITM~ ~override~
-		SAY 0xC @126
-		SAY 0x54 @127
-	
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN01.BAM~ ~override~
-	
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.ITM~ ~override~
-		SAY 0xC @128
-		SAY 0x54 @129
-	
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPOTN02.BAM~ ~override~
 	
 	OUTER_SET simulacrum = 26632
 
