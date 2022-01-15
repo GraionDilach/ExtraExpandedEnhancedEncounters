@@ -208,6 +208,12 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0x54 @144
 
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.BAM~ ~override~
+	
+	OUTER_SET disablexanmail = RESOLVE_STR_REF(@153)
+	APPEND ~item_use.2da~ ~OLCHAN01 XAN %disablexanmail% 2 268~
+	
+	COPY_EXISTING ~item_use.2da~ ~override~
+		PRETTY_PRINT_2DA
 
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.ITM~ ~override~
 		SAY 0xC @145
