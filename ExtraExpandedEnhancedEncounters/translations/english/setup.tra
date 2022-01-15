@@ -34,22 +34,22 @@
 
 STATISTICS:
 
-Equipped Abilities:
-- Melee THAC0: +2~
+Equipped abilities:
+– Melee THAC0: +2~
 @122   = ~Ring of Accurate Striking +3~
 @123   = ~Rings of accurate striking to such a degree of power as this ring are exceedingly rare among the realms but they do tend to emerge from time to time upon the bloodied paths carved out by champions of blood and steel in the endless churn of lives and deaths; felling swaths of lesser beings beneath their insatiable wrath. This magical ring is immaculately crafted by a master jeweller with a pure gold band enchanted with strong magical enchantments. The centrepiece of the ring is an obsidian black gemstone set masterfully in the ring from behind the band; a crafting feat that is very difficult indeed. The impenetrable black of the jewel centre-forth almost seems to demand one's eye. When blood flows, bones break and flesh rends the midnight black gem glows with authority and simmers with almost a will of its own upon one's grasp. The blood-hungry band pulls at one's hands with a mind of its own, guiding the wearers melee strikes to the folly of one's opponents. These incredibly effective magical rings are often the pride of any sellsword or champion of bloodied battle. Frequently one of these rings will land the owner in fierce duels of life and death for the right to wield one such of these rings. Masters at arms have killed for less than what one possesses and if one is to don such a powerful magical boon one should embrace the path of the bloodshed left by such rings; or act to conceal such items from any would-be next master of blood and steel.
 
 STATISTICS:
 
-Equipped Abilities:
-- Melee THAC0: +3~
+Equipped abilities:
+– Melee THAC0: +3~
 @124   = ~Zaldor's Mage Slayer +2~
 @125   = ~This magic dart has slain many mages and non-mages alike. Once upon a time this dart was crafted by the Moon Elf Mage/Thief Zaldor Silentspell some 500 years ago near the city of Berdusk to help him win duels with rival mages. This magical dart was enchanted by Zaldor to engulf a target in disruptive magical energy on a successful strike to help throw off an opponent's spellcasting in combat. Zaldor grew tired of having to replace expensive magical darts; so with great effort and expense he successfully enchanted his magical dart to return to his hand once thrown. Although the enchanted dart is deadly, Zaldor himself mostly used the weapon to defeat his rivals in duels and not to slain them outright. Zaldor Silentspell only slew a few enemies with his prized magical dart in his day. It was his descendants that truly wreaked havoc across the Sword Coast with this powerful weapon. Eventually his great grandson Xarnor Silentspell fell in combat; losing the dart during a raid in the Cloakwood Forest to slay a gigantic wyvern.
 
 STATISTICS:
 
 Combat abilities:
-- Returns to the wielder's hand when thrown
+– Returns to the wielder's hand when thrown
 
 THAC0: +2
 Damage: 1d3+2, +1 magic damage
@@ -109,7 +109,7 @@ These magical boots are sought after from all sorts of combatants whom seek an e
 STATISTICS:
 
 Equipped abilities: 
-- Armor Class: +5 vs. missile attacks
+– Armor Class: +5 vs. missile attacks
 
 Weight: 4~
 
@@ -118,19 +118,19 @@ Weight: 4~
 
 STATISTICS:
 
-Equipped Abilities:
-- Armor Class: +1
-- Fire Resistance: +50%
-- Magic Resistance: +10%
-- Caster Level: +1
-- 1/2 of an extra attack per round
-- Grants Proficient (one slot) in Dagger weapon proficiency
+Equipped abilities:
+– Armor Class: +1
+– Fire Resistance: +50%
+– Magic Resistance: +10%
+– Caster Level: +1
+– 1/2 of an extra attack per round
+– Grants Proficient (one slot) in Dagger weapon proficiency
 
-Combat Abilities:
-- Inflict 1 magical damage per strike upon a target to heal the wielder for 1 hit point
+Combat abilities:
+– Inflict 1 magical damage per strike upon a target to heal the wielder for 1 hit point
 
 Charge Abilities:
-- Elfshadow once per day for 10 rounds creating a magical duplicate of the wielder much like the wizard spell Simulacrum
+– Elfshadow once per day for 10 rounds creating a magical duplicate of the wielder much like the wizard spell Simulacrum
 
 THAC0: +3, +5 vs. undead
 Damage: 1d8+3, +5 vs. undead
@@ -145,12 +145,12 @@ Weight: 3 lb.~
 
 STATISTICS:
 
-Equipped Abilities:
-- Dexterity: +1
-- THAC0: +1
-- Hit Points: +20
-- Can memorize two extra 3rd-level wizard spells
-- Spellcasting is not disabled
+Equipped abilities:
+– Dexterity: +1
+– THAC0: +1
+– Hit Points: +20
+– Can memorize two extra 3rd-level wizard spells
+– Spellcasting is not disabled
 
 Armor Class: 4 (2 vs. slashing, 6 vs. crushing)
 Requires:
@@ -166,12 +166,12 @@ Weight: 6 lb.~
 
 STATISTICS:
 
-Equipped Abilities:
-- Protects against critical hits
-- Hit Points: +5
+Equipped abilities:
+– Protects against critical hits
+– Hit Points: +5
 
-Charge Abilities:
-- Cast Find Traps spell at level 10 three times per day
+Charge abilities:
+– Cast Find Traps spell at level 10 three times per day
 
 Requires:
 15 Dexterity
@@ -183,13 +183,13 @@ Weight: 1 lb.~
 
 STATISTICS:
 
-Equipped Abilities:
-- Armor Class: +3 (-2 vs. missiles, -3 vs. piercing)
-- Armor Class: +1 vs. missile attacks
-- Grants Proficient (one slot) in Sword and Shield fighting style
+Equipped abilities:
+– Armor Class: +3 (-2 vs. missiles, -3 vs. piercing)
+– Armor Class: +1 vs. missile attacks
+– Grants Proficient (one slot) in Sword and Shield fighting style
 
-Charge Abilities: 
-- Cast Tenser's Transformation at level 10 three times per day:
+Charge abilities: 
+– Cast Tenser's Transformation at level 10 three times per day:
 Tenser's Transformation changes the caster into a heroic fighter for 1 round per level of the caster. Thus doubling the target's hit points, and giving them a +4 bonus to their armor class. All of the damage that the caster sustains takes away from the bonus hit points first. All of the wizard's attacks have the same chance to hit as a fighter of the same level, additionally the target is allowed to attack twice per round with a +2 damage bonus per attack.
 
 Weight: 1 lb.~
@@ -199,8 +199,8 @@ Weight: 1 lb.~
 
 STATISTICS:
 
-Equipped Abilities:
-- Melee THAC0: +1~
+Equipped abilities:
+– Melee THAC0: +1~
 
 @151   = ~Red Drakescale Armor +2~
 @152   = ~This shimmering crimson suit of leather armor is soft and supple despite the strength in the plates of red dragon scale. The wearer of this armor is protected from even the heaviest blows as well as resistant to fire. One should still be careful wearing it near chromatic dragons, however, particularly red ones.
