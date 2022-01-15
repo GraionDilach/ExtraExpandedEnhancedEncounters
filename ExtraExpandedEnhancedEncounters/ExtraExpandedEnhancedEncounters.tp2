@@ -1,7 +1,7 @@
 BACKUP ~ExtraExpandedEnhancedEncounters/backup~
 // AUTHOR ~Within Amnesia~
 SUPPORT "https://forums.beamdog.com/discussion/73749"
-VERSION ~2.1a~
+VERSION ~3.0~
 
 ALWAYS
 	PRINT @0
