@@ -201,3 +201,17 @@ STATISTICS:
 
 Equipped Abilities:
 - Melee THAC0: +1~
+
+@151   = ~Red Drakescale Armor +2~
+@152   = ~This shimmering crimson suit of leather armor is soft and supple despite the strength in the plates of red dragon scale. The wearer of this armor is protected from even the heaviest blows as well as resistant to fire. One should still be careful wearing it near chromatic dragons, however, particularly red ones.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +66%
+
+Armor Class: 5 (3 vs. slashing, 4 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 7~

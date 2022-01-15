@@ -294,6 +294,16 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 	
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLGWYVRN.ITM~ ~override~
 
+	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLTAEROM.D~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLEA.ITM~ ~override~
+		SAY 0xC @151
+		SAY 0x54 @152
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLEA.BAM~ ~override~
+	
+	COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLED.BAM~ ~override~
+
 BEGIN @8
 LABEL OL-EEEE-UNDERCITY //AR0123
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
