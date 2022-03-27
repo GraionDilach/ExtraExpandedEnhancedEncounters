@@ -314,6 +314,13 @@ BEGIN @8
 LABEL OL-EEEE-UNDERCITY //AR0123
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 
+	ACTION_IF !(FILE_EXISTS ~override/ol_eeee.ini~)
+	BEGIN
+		COPY ~ExtraExpandedEnhancedEncounters/ini/ol_eeee.ini~ ~override~
+  	END
+
+	INCLUDE ~override/ol_eeee.ini~
+
 	COPY_EXISTING ~%area_prefix%0123.ARE~ ~override~	// Removes PLAT24
 		LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "PLAT24" END
 		BUT_ONLY
@@ -352,8 +359,12 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0xC @108
 		WRITE_ASCII 0x2cc ~OLSKEL6G~
 	
-	COPY_EXISTING ~PLAT24.ITM~ ~override~
-		WRITE_ASCII 0x3A ~OLPLAT24~
+	ACTION_IF ol_magma_bulwark_icon == 1
+	BEGIN
+		COPY_EXISTING ~PLAT24.ITM~ ~override~
+			WRITE_ASCII 0x3A ~OLPLAT24~
+			BUT_ONLY
+	END
 	
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.BAM~ ~override~
 
