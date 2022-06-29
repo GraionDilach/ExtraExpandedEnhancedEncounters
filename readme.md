@@ -91,3 +91,11 @@ Changed: Removed additional type of healing potions and substituted them with BG
 ### Version 3.1
 
 Changed: Expose the Magma Bulwark icon patching to an external ini configuration option, to allow players to have the alternative icon in Tweaks Anthology v13's Unique Icons with the U.M.B.E.R.S. component. Prior to the mod installation; copy the ini/ol_eeee.ini file to override and edit ol_magma_bulwark_icon value to 0 for this option.
+
+### Version 3.2
+
+Fixed: one typo in Bimmy's variable.
+
+### Version 4.0
+
+Adds Russian translation by yota13 & p_zombie.

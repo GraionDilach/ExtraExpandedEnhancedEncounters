@@ -1,7 +1,7 @@
 BACKUP ~ExtraExpandedEnhancedEncounters/backup~
 // AUTHOR ~Within Amnesia~
 SUPPORT "https://forums.beamdog.com/discussion/73749"
-VERSION ~3.2~
+VERSION ~4.0~
 
 ALWAYS
 	PRINT @0
@@ -23,6 +23,10 @@ AUTO_TRA ~ExtraExpandedEnhancedEncounters/translations/%s~
 LANGUAGE ~English~
          ~English~
          ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
+
+LANGUAGE ~Russian (by yota13 & p_zombie)~
+         ~Russian~
+         ~ExtraExpandedEnhancedEncounters/translations/russian/setup.tra~
 
 BEGIN @1
 DESIGNATED 0
