@@ -99,3 +99,7 @@ Fixed: one typo in Bimmy's variable.
 ### Version 4.0
 
 Adds Russian translation by yota13 & p_zombie.
+
+### Version 4.1
+
+Fixed: wrong random treasures dropped in the Gnoll Stronghold and Undercity section on EET.

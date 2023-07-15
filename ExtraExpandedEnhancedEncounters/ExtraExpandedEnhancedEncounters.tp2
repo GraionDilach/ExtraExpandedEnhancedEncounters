@@ -1,7 +1,7 @@
 BACKUP ~ExtraExpandedEnhancedEncounters/backup~
 // AUTHOR ~Within Amnesia~
 SUPPORT "https://forums.beamdog.com/discussion/73749"
-VERSION ~4.0~
+VERSION ~4.1~
 
 ALWAYS
 	PRINT @0
@@ -17,6 +17,8 @@ ALWAYS
 		OUTER_SPRINT "area_prefix" BG
 		OUTER_SET isEET = 1
 	END
+
+	INCLUDE ~ExtraExpandedEnhancedEncounters/library/macros.tpa~
 END
 
 AUTO_TRA ~ExtraExpandedEnhancedEncounters/translations/%s~
@@ -149,6 +151,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 			WRITE_LONG DYING 205518
 			WRITE_LONG SELECT_COMMON1 205510
 			WRITE_LONG SELECT_COMMON2 205511
+			LPM PATCH_EET_RANDOM_TREASURES
 		BUT_ONLY
 	END
 
@@ -169,8 +172,6 @@ BEGIN @5
 DESIGNATED 4
 LABEL OL-EEEE-XANS-NEW-GROVE //AR5405
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
-
-	INCLUDE ~ExtraExpandedEnhancedEncounters/library/macros.tpa~
 
 	EXTEND_BOTTOM ~%area_prefix%5405.bcs~ ~ExtraExpandedEnhancedEncounters/OL5405.baf~
 	
@@ -423,6 +424,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 			WRITE_LONG DYING 205553
 			WRITE_LONG SELECT_COMMON1 205546
 			WRITE_LONG SELECT_COMMON2 205547
+			LPM PATCH_EET_RANDOM_TREASURES
 		BUT_ONLY
 	END
 
