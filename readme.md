@@ -37,6 +37,7 @@ This component requires Siege of Dragonspear/Enhanced Edition Trilogy and will n
 
 Adds a fair amount of additional items to Mulahey's chest, one dedicated to Xan, and a few other intended for him.  
 This component also adds additional effects to his moonblade.
+**Note that this component heavily buffs the powerlevel of Xan and also can change his role in the party.** 
 
 ### Daenni's Bridge Bandits
 
