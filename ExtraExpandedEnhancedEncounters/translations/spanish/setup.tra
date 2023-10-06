@@ -1,0 +1,213 @@
+@0    = ~Encuentros extra ampliados para Puerta de Baldur: Edición mejorada (Trilogy), Version 2.0+~
+@1    = ~EEEE: Melia Nocherápida, Cruce de caminos~
+@2    = ~EEEE: Bimmy's Bandidos asaltantes~
+@3    = ~EEEE: Fortaleza gnoll reforzada~
+@4    = ~EEEE: Encuentro con un oso cerca de la Fortaleza Gnoll~
+@5    = ~EEEE: Xan's New Grove (nuevos objetos en la cueva de Mulahey)~
+@6    = ~EEEE: Daenni's Bandidos del puente~
+@7    = ~EEEE: El Draco de Fuego en la Cueva del Dracos~
+@8    = ~EEEE: Encuentro con el baluarte de magma de la ciudad subterránea; Esqueleto rojo-(U.M.B.E.R.S.)~ 
+
+@10   = ~Este componente sólo utiliza los monstruos de Siege of Dragonspear que faltan en la instalación actual. Saltar.~
+@11   = ~Juego no compatible detectado. Este mod sólo funciona con Baldur's Gate: Enhanced Edition (Trilogy).~
+
+@101   = ~Melia Nocherápida~
+@102   = ~Bimmy~
+@103   = ~Ric'Berna~
+@104   = ~Izzy'Nildarts~
+@105   = ~Ffud McKagan~
+@106   = ~El'xaesor~
+@107   = ~St. Never'Elda~
+@108   = ~Slash~
+@109   = ~Daenni~
+@110   = ~Gran Wyvern~
+@111   = ~Draco de fuego~
+@112   = ~Cacique Gnoll~
+@113   = ~Lugarteniente Gnoll~
+@114   = ~Veterano Gnoll~
+@115   = ~Élite de Gnoll~
+@116   = ~Acuchillador Gnoll~
+@117   = ~Gnoll~
+
+@120   = ~Anillo de Golpe Certero +2~
+@121   = ~Los anillos de golpe certero no son muy comunes entre los reinos, pero suelen aparecer de vez en cuando en los viajes de aventureros descarriados. Este anillo mágico puede parecer un anillo ordinario con algún adorno engastado con una piedra preciosa negra obsidiana que atrae la mirada; pero en el fragor de la batalla el anillo brilla ligeramente y se vuelve cálido al tacto. Las manos parecen deslizarse por sí solas, dejando al descubierto la debilidad de las posturas y defensas del oponente cuando se lleva uno de estos anillos y se dispone a golpear con un arma cuerpo a cuerpo. Estos magníficos anillos mágicos se suelen regalar a aprendices de nobles y a personas de alto poder adquisitivo para mejorar sus habilidades cuerpo a cuerpo tras su graduación como aprendices. Por ello, estos anillos son muy codiciados por todos aquellos que blanden una espada o un arma contundente. Al igual que las grandes variantes de objetos mágicos que aumentan la habilidad y destreza con las armas, estos anillos otorgan una habilidad letal, pero no la sabiduría para permanecer con vida y mantener dicha habilidad..
+
+ESTADÍSTICAS:
+
+Habilidades equipadas:
+- Cuerpo a cuerpo THAC0: +2~
+@122   = ~Anillo de Golpe Certero +3~
+@123   = ~Los anillos con un poder tan preciso como el de este anillo son extremadamente raros en los reinos, pero suelen aparecer de vez en cuando en los caminos ensangrentados labrados por los campeones de sangre y acero en el interminable trajín de vidas y muertes, arrasando a seres inferiores bajo su ira insaciable. Este anillo mágico está inmaculadamente elaborado por un maestro joyero con una banda de oro puro encantada con fuertes hechizos mágicos. La pieza central del anillo es una gema negra de obsidiana engarzada magistralmente en el anillo por detrás de la banda; una proeza artesanal realmente difícil. El negro impenetrable de la joya central casi parece reclamar la mirada. Cuando la sangre fluye, los huesos se rompen y la carne se desgarra, la gema negra como la medianoche brilla con autoridad y hierve casi con voluntad propia en la mano. La banda hambrienta de sangre tira de las manos con una mente propia, guiando los golpes cuerpo a cuerpo del portador hasta la locura de sus oponentes. Estos anillos mágicos increíblemente eficaces suelen ser el orgullo de cualquier espadachín o campeón de la batalla sangrienta. Con frecuencia, uno de estos anillos llevará a su dueño a enfrentarse en feroces duelos a vida o muerte por el derecho a blandir uno de ellos. Los maestros de armas han matado por menos de lo que uno posee, y si uno quiere llevar una bendición mágica tan poderosa, debería seguir el camino del derramamiento de sangre que dejan estos anillos; o actuar para ocultar estos objetos a cualquier aspirante a maestro de la sangre y el acero.
+
+ESTADÍSTICAS:
+
+Habilidades equipadas:
+- cuerpo a cuerpo THAC0: +3~
+@124   = ~Asesino de magos de Zaldor +2~
+@125   = ~Este dardo mágico ha matado a muchos magos y no magos por igual. Hace unos 500 años, el mago/ladrón elfo lunar Zaldor ConjuroSilencioso creó este dardo cerca de la ciudad de Berdusk para ayudarle a ganar duelos con magos rivales. Este dardo mágico fue encantado por Zaldor para envolver a un objetivo en energía mágica disruptiva en un golpe exitoso para ayudar a desviar el lanzamiento de hechizos de un oponente en combate. Zaldor se cansó de tener que reemplazar dardos mágicos caros, así que, con gran esfuerzo y gasto, logró encantar su dardo mágico para que volviera a su mano una vez lanzado. Aunque el dardo encantado es mortífero, el propio Zaldor utilizó el arma sobre todo para derrotar a sus rivales en duelos y no para matarlos directamente. Zaldor Conjurosilencioso sólo mató a unos pocos enemigos con su preciado dardo mágico en su época. Fueron sus descendientes los que verdaderamente sembraron el caos en la Costa de la Espada con esta poderosa arma. Finalmente, su bisnieto Xarnor ConjuroSilencioso cayó en combate y perdió el dardo durante una incursión en el Bosque del Bosque de la Capa para matar a un Draco gigante..
+
+ESTADÍSTICAS:
+
+Habilidades de combate:
+- Vuelve a la mano del portador cuando se lanza
+
+THAC0: +2
+Daño: 1d3+2, +1 daño mágico
+Tipo de daño: Misil
+Factor de velocidad: 0
+Tipo de competencia: Dardo
+Tipo: Una mano
+
+Peso: 0 lb.~
+@126   = ~Poción de curación adicional~
+@127   = ~Cuando se consume en su totalidad, esta poción restaura 15 Puntos de Golpe a la persona. El efecto es instantáneo y la poción se destruye en el proceso.
+
+ESTADÍSTICAS:
+
+Especiales: Restaura 15 puntos de vida.
+
+Peso: 1 lb.~
+@128   = ~Poción de curación sorprendente~
+@129   = ~Cuando se consume en su totalidad, esta poción restaura 21 Puntos de Golpe a la persona. El efecto es instantáneo y la poción se destruye en el proceso.
+
+ESTADÍSTICAS:
+
+Especiales: Restaura 21 puntos de vida.
+
+Peso: 1 lb.~
+@130   = ~Escamas de draco de fuego~
+@131   = ~Estas escamas de draco de fuego son tan duras como la piedra, pero tan flexibles como el cuero de una bota. Bien trabajadas por un maestro artesano, estas escamas de draco de fuego podrían dar lugar a un excelente escudo, una armadura o incluso una falda plegada defensiva. El mundo se abre de par en par a los audaces.
+
+ESTADÍSTICAS:
+
+Peso: 7 lb.~
+@132   = ~Dientes de draco de fuego~
+@133   = ~Sneaky sneaky, indeed.
+
+ESTADÍSTICAS:
+
+Peso: 0 lb.~
+@134   = ~Aliento de draco de fuego~
+@135   = ~Brazo fuerte +2~
+@136   = ~Este enorme arco era propiedad del Explorador Bearpaw, que al parecer lo recibió de un ogro extrañamente benévolo. Nunca se supo el motivo del regalo, pero se ganó el respeto de todos los que conoció y probablemente se hizo amigo de la criatura mientras patrullaba en el Bosque de las Capas. Bearpaw podía tensar el arco sin el menor esfuerzo, pero cuando murió se lo legó a su esposa y a sus hijos, y ninguno de ellos pudo tensar la cuerda ni siquiera hasta la mitad. Al final lo vendieron a un mercader que se dirigía al sur.
+
+ESTADÍSTICAS:
+
+THAC0: +3
+Daño: +3 (misil)
+Factor de velocidad: 4
+Tipo de competencia: Arco largo
+Tipo: Arco largo A dos manos
+Requiere
+ 19 Fuerza
+
+Peso: 7 lb.~
+@137   = ~Botas de evasión~
+@138   = ~Botas de evasión
+Estas botas mágicas son codiciadas por todo tipo de combatientes que buscan una ventaja contra los enemigos a distancia. Estas botas están diseñadas para detectar los proyectiles que se acercan y ayudar al portador a esquivarlos. Estas botas suponen una gran ventaja para el que las lleva, pero el que confía demasiado en sí mismo puede creerse invulnerable a las flechas, los virotes y demás proyectiles. Estas botas son poderosas, pero no infalibles, y algún que otro proyectil puede alcanzar a su portador.
+
+ESTADÍSTICAS:
+
+Habilidades equipadas: 
+- Clase de Armadura: +5 vs. ataques de proyectiles
+
+Peso: 4~
+
+@141   = ~Hoja lunar +3~ // sin utilizar
+@142   = ~Esta potente arma es extremadamente antigua, tiene miles de años y fue creada por los herreros de la antigua Myth Drannor antes de la Caída en 711 DR. Cada Espada Lunar es única y tiene un cristal de piedra lunar altamente mágico, por no decir divino, engarzado en el pomo, así como un Mythal colocado en cada hoja; lo que hace que este tipo de espadas no sean armas encantadas normales en los reinos, sino más bien armas artefacto merecidamente legendarias. Las Espadas Lunares se utilizan en el largo proceso de selección de un gobernante para la isla de Evermeet. Las Cuchillas Lunares pueden describirse literalmente como "creadoras de reyes" o "destructoras de reyes", como es el caso de la más poderosa de las Cuchillas Lunares, la Cuchilla del Rey. Este Filo Lunar es una reliquia de una época muy lejana y es un veterano de la Guerra del Llanto que calumnió en La Caída de Myth Drannor al Ejército de la Oscuridad. En la cual un antiguo portador o heredero de esta espada se retiró a la Isla de Evermeet después de La Caída en 714 DR. 175 años después de la Caída, en 889 RD, en Leuthilspar, la capital de la isla nación de Evermeet, se instauró una nueva forma de monarquía, después de que otra hoja lunar superviviente de Myth Drannor, la Espada del Rey, hiciera que su Bladerita eligiera a su nuevo portador, Zaor Moonflover, que fue coronado Rey de Evermeet. Este Filo Lunar es uno de los 25 Filos Lunares activos de los 300-400 que permanecen inactivos en todos los reinos. Una Hoja Lunar elige a su dueño mediante un antiguo ritual conocido como Bladerita; y en el caso de esta espada, ha elegido al elfo Xan. Sólo Xan puede usar esta espada y todas las hoja lunar arden al tacto de quienes no las usan. Si alguien más intenta ser elegido por la Hoja Lunar para convertirse en su nuevo portador y es rechazado por el Bladerita de la Hoja Lunar, se encontrará incapaz de levantar el arma e inmediatamente estallará en llamas blancas y casi garantizará su propia muerte. Además, se argumenta que sólo aquellos con un linaje de sangre real élfica pueden blandir una Hoja Lunar; pero esto puede ser discutido o quizás superado por esfuerzos heroicos excepcionales de una persona de herencia élfica que se someta a un Bladerita. Todo portador de una Hoja Lunar imparte un poder a la hoja, tal vez en forma de runa. Se sabe que otras Cuchillas Lunares tienen hasta nueve o más runas grabadas en el arma, cada una de las cuales corresponde a un portador. Cada hoja lunar tiene la habilidad de la sombra élfica, por la que la espada puede duplicar a su portador, como el hechizo Simulacro. Todas las Hojas Lunares son una raza especial de reliquias que drenan la fuerza vital de cualquier enemigo al que golpeen; como en el caso del robo de vida. Las Hojas Lunares también son conocidas por ser disruptivas con energías mágicas y cada Hoja Lunar puede variar de un caso a otro dada la singularidad de cada hoja y de su antigua línea de portadores pasados y presentes, elegidos por sus Bladeritas rituales individuales. Todas las Hojas Lunares son extremadamente poderosas contra los No Muertos, ya que literalmente los hierven al contacto. En su estado actual, la Hoja Lunar de Xan es una fuerza a tener en cuenta, y otorga a su portador muchos poderes protectores contra amenazas mágicas y físicas, además de otorgar a Xan una mayor capacidad para lanzar hechizos y destreza marcial. Además, si esta poderosa espada élfica se despierta adecuadamente, se puede recurrir a los antiguos poderes latentes en su interior; desde su forja en Myth Drannor hasta su larga historia, pasando por su antiguo linaje de portadores elegidos por el ritual de Bladerite de la Hoja Lunar..
+
+ESTADÍSTICAS:
+
+Habilidades equipadas:
+- Clase de Armadura: +1
+- Resistencia al fuego: +50%
+- Resistencia Mágica: +10%
+- Nivel de lanzador: +1
+- 1/2 de un ataque extra por asalto
+- Otorga Competencia (una ranura) en arma Daga
+
+Habilidades de combate:
+- Inflige 1 daño mágico por golpe a un objetivo para curar al portador durante 1 punto de golpe
+
+Habilidades de carga:
+- Sombra élfica una vez al día durante 10 asaltos, creando un duplicado mágico del portador similar al hechizo de mago Simulacro.
+
+THAC0: +3, +5 vs. muertos vivientes
+Daño: 1d8+3, +5 vs. no muertos
+Tipo de daño: Contundente
+Factor de velocidad: 2
+Tipo de competencia: Daga
+Tipo: Una mano
+
+Peso: 3 lb.~
+@143   = ~Malla del guardián de la tumba de Evereskan +1~
+@144   = ~Esta fina armadura mágica de cota de malla elfa protege al portador de ataques físicos y no obstaculiza su capacidad de conjuro. Esta cota de malla mágica proviene del antiguo asentamiento élfico de Evereska y ha pasado muchas décadas al servicio de los guardianes de las tumbas de Evereska, que utilizaban la magia, la astucia y el deber para defender los lugares de enterramiento de sus honorables difuntos. Pocas cosas son más sagradas para los elfos de Evereska que los cuerpos de sus muertos. Innumerables grandes líderes, héroes y eruditos del Hogar Fortaleza están enterrados en tumbas repartidas por toda la región, y los elfos consideran estos lugares inviolables. Por desgracia, las tumbas también contienen tesoros mágicos de valor incalculable fabricados por los elfos de antaño, y la idea de semejante botín lleva a muchos saqueadores a poner a prueba las defensas de los elfos. Los guardianes de las tumbas de Evereskan se aseguran de que estas defensas sean realmente buenas. Cada guardián de tumba jura solemnemente perseguir a los ladrones de tumbas hasta los confines de los reinos y más allá, y no descansar hasta que los profanadores hayan sido asesinados. Para los elfos de Evereska, nada era más sagrado que los cuerpos de los difuntos y las innumerables tumbas de grandes antepasados y héroes esparcidas por la región. Por desgracia, las historias de tesoros enterrados y objetos mágicos atraían a muchos aventureros y profanadores, que buscaban despojar a las tumbas de sus preciados objetos. Las tumbas al este de Evereska, en la frontera con el desierto de Anauroch, eran patrulladas con frecuencia por guardianes de tumbas, ya que eran un objetivo habitual de los ladrones de tumbas humanos y humanoides. Algunas tumbas pertenecían a familias elfas odiadas desde hacía mucho tiempo, pero aun así los guardianes de tumbas mantenían su juramento de proteger estos lugares de enterramiento. Como resultado de la constante desconfianza hacia los forasteros, los elfos de Evereska encantaron este baluarte élfico con energías mágicas que mejoran y protegen aún más al portador de esta inmaculada armadura de cota de malla élfica finamente lobuna; sin embargo, también actúan para restringir su uso sólo a aquellos de ascendencia élfica y con la dedicación adecuada..
+
+ESTADÍSTICAS:
+
+Habilidades equipadas:
+- Destreza: +1
+- THAC0: +1
+- Puntos de golpe: +20
+- Puede memorizar dos hechizos adicionales de mago de 3er nivel
+- El lanzamiento de hechizos no está desactivado
+
+Clase de Armadura: 4 (2 vs. cuchillada, 6 vs. aplastamiento)
+
+Peso: 6 lb.~
+@145   = ~Cinta de la Página Desaparecida +1~
+@146   = ~Esta banda de protección aumentada mágicamente fue creada para algunos de los miembros más astutos en magia de una orden conocida como los Caballeros de las Páginas Perdidas, con sede en Evereska. Los encantamientos mágicos colocados en esta diadema finamente elaborada e igualmente robusta imbuyen al portador de una fortaleza general. Además, la mayor de las tres gemas de piedra lunar encantadas que adornan la ceja de la banda encantada proporciona un campo de fuerza protector alrededor del cráneo que lo protege como lo haría un yelmo blindado normal, pero sin el estorbo. Una vez puesto, el portador pasa a dominar el hechizo Encontrar trampas y puede lanzarlo tres veces al día; la magia se recarga tras un día entero de descanso. Los Caballeros de la Página Perdida son una raza especial de magos pícaros. Dominan y combinan sus conocimientos de hechizos con su amor absoluto por las travesuras, el latrocinio y la intriga. Son un ejemplo notable de filtradores de hechizos con base en el valle de Evereska, pero activos en todos los reinos. Incluso hay algunos Caballeros de la Página Perdida en las filas del mucho menos conocido gremio de ladrones elfos de Everlund llamado Los Pícaros del Crepúsculo Sonriente. Los Caballeros de la Página Perdida trabajan bien con el clero de Erevan, especialmente con los Buscadores Divinos y los Pícaros, pero también con los Ladrones-Acrobatas, los Bailarines de las Sombras y los Asaltantes de Templos de Erevan Ilesere. Se encuentran entre los ladrones más hábiles del reino y no dudan en lanzar un Enjambre de meteoritos con ráfaga retardada en la capilla principal de una deidad rival, o lanzar Flensing sobre un oponente tras haberle robado un objeto o artefacto de valor incalculable. A menudo son enviados en misiones muy peligrosas para recuperar artefactos elfos robados y objetos mágicos de otras iglesias y razas.
+
+ESTADÍSTICAS:
+
+Habilidades equipadas:
+- Protección contra golpes críticos
+- Puntos de golpe: +5
+
+Habilidades de carga:
+- Lanza el hechizo Encontrar trampas de nivel 10 tres veces al día
+
+Requiere:
+15 Destreza
+12 Inteligencia
+
+Peso: 1 lb.~
+@147   = ~Broquel de poder inesperado +2~
+@148   = ~Broquel del Poder Inesperado, o también conocido como Brazo del Existencialista. Este broquel en particular es muy antiguo y comenzó su vida como un mero adorno heráldico de pared para una familia noble particularmente rica procedente de la ciudad portuaria comercial de West Gate. El antaño orgulloso escudo de la familia es ahora indescifrable por haber sido destrozado y profanado con furia, y en su jefe se ha impreso un nuevo símbolo superpuesto del hechizo de 6º nivel Transformación del Tenser. Según cuenta la historia, muchos historiadores nobles de Westhavian discrepan y refutan entre sí, ya que la mayoría de los registros están borrosos, ensangrentados y reescritos en el mejor de los casos; pero la mayoría puede estar de acuerdo en los siguientes detalles básicos. Entre los años 257 y 260 d.C., la ciudad portuaria de West Gate, también conocida como la "Puerta de Occidente" -del Mar Interior al Este- fue invadida con éxito y los poderes gobernantes fueron tomados y reemplazados violentamente por fuerzas piratas de las Islas Piratas. La convulsión de las familias gobernantes trajo mucha confusión a las familias más ricas del comercio de la ciudad, que se vieron obligadas a recurrir a la extorsión y a leyes comerciales injustas, así como a fuertes impuestos sobre sus operaciones familiares. Una gran cantidad de fuentes discuten y se contradicen entre sí sobre qué casa de la familia noble tiene este broquel asociado a su tumultuosa historia, pero la mayoría de los historiadores dirán que el broquel se transformó en su forma actual poco después de la nueva jurisdicción injusta del reciente autoproclamado "Rey Pirata de West Gate". La mayoría de las fuentes coinciden en que, después de que se impusieran unos impuestos especialmente elevados sobre el comercio a las familias de mercaderes más acaudaladas de West Gate, un noble de gran prestigio se manifestó en contra. Al mediodía siguiente, el influyente noble fue asesinado por una banda de piratas del rey en el mercado de la ciudad a plena luz del día, a la vista y a tiro de piedra de los principales edificios de la mayoría de las familias nobles comerciantes. Esto fue visto por las familias comerciantes como una declaración draconiana de acuerdo incondicional de la nueva fiscalidad o una muerte rápida atroz. A partir de aquí, la historia comienza a desmoronarse y a entrar en una espiral de contradicciones y acalorados debates entre los principales historiadores de West Gate. Aunque algunos detalles siguen siendo coherentes y concisos. Poco después de la malvada y prematura muerte de un noble especialmente carismático de una de las influyentes familias comerciantes de West Gate, un joven noble medio elfo o hechicero arcano fue presionado para que se aliara con el corrupto partido gobernante del Rey Pirata o con una fuerza externa cormyriana que deseaba derrocar al partido gobernante desde dentro. Las fuentes discuten ferozmente sobre los siguientes breves segmentos de la historia, pero la mayoría está de acuerdo en que el Hechicero Medio Elfo no eligió un bando y se marchó violentamente en malos términos de su noble casa de West Gate. Preguntarse por qué estaba en los lugares equivocados de West Gate podría dar lugar a acalorados enfrentamientos a gritos, violentas reyertas e incluso derramamientos de sangre facciosos entre algunas de las casas nobles más cuestionables de West Gate. Muchos creen que el otrora joven noble medio elfo hechicero es de la misma sangre azul que el último verdadero rey de West Gate y el único superviviente de la sangre del rey tras la revuelta pirata. Como resultado de este violento debate, de vez en cuando ha habido muchos derramamientos de sangre clandestinos entre algunas de las familias nobles existentes desde hace mucho tiempo. Algunas de las familias nobles argumentan que deberían gobernar la ciudad de West Gate, ya que creen ferozmente que su linaje se remonta al Hechicero medio elfo que una vez poseyó este broquel en particular. Se desconoce si el asunto se resolverá pacíficamente o incluso si se calmará, pero una cosa es segura: el encantamiento mágico de este pequeño escudo es muy, muy fuerte. Muchos coinciden en que sólo un Hechicero muy poderoso o bien entrenado podría haber colocado el encantamiento sobre este baluarte particularmente controvertido. En cuanto a por qué y cómo un conjunto tan extraño y extraño de habilidades y requisitos se utilizaron para el encantamiento inusual es un misterio argumentado. También se desconoce cómo se utilizó o cómo se aplicó la magia poco común a este objeto. Hay un gran debate entre historiadores y eruditos sobre el uso y los esfuerzos de dicho objeto; desde historias de grandes aventuras hasta relatos de cobardía y evasión. Cualquiera que sea la forma en que se mire la historia y la controversia sobre este pequeño pero sorprendentemente poderoso broquel, se puede estar seguro de que el escudo tiene un valor sorprendente y un poder inesperado, tanto física como políticamente..
+
+ESTADÍSTICAS:
+
+Habilidades equipadas:
+- Clase de Armadura: +3 (-2 vs. proyectiles, -3 vs. perforante)
+- Clase de armadura: +1 vs. ataques con proyectiles
+- Otorga Competencia (una ranura) en estilo de lucha con espada y escudo
+
+Habilidades de carga: 
+- Lanza Transformación de Tenser nivel 10 tres veces al día:
+Transformación de Tenser convierte al lanzador en un luchador heroico durante 1 asalto por nivel del lanzador. Así, duplica los puntos de golpe del objetivo y le otorga un bonificador +4 a su clase de armadura. Todo el daño que sufra el lanzador resta primero los puntos de golpe adicionales. Todos los ataques del hechicero tienen la misma probabilidad de golpear que un luchador del mismo nivel, además el objetivo puede atacar dos veces por asalto con un +2 al daño por ataque..
+
+Peso: 1 lb.~
+
+@149   = ~Anillo de golpe certero +1~
+@150   = ~Los anillos de golpe certero no son muy comunes entre los reinos, pero suelen aparecer de vez en cuando en los viajes de aventureros descarriados. Este anillo mágico puede parecer un anillo ordinario con algún adorno engastado con una piedra preciosa negra obsidiana que atrae la mirada; pero en el fragor de la batalla el anillo brilla ligeramente y se vuelve cálido al tacto. Las manos parecen deslizarse por sí solas, dejando al descubierto la debilidad de las posturas y defensas del oponente cuando se lleva uno de estos anillos y se dispone a golpear con un arma cuerpo a cuerpo. Estos magníficos anillos mágicos se suelen regalar a aprendices de nobles y a personas de alto poder adquisitivo para mejorar sus habilidades cuerpo a cuerpo tras su graduación como aprendices. Por ello, estos anillos son muy codiciados por todos aquellos que blanden una espada o un arma contundente. Al igual que las grandes variantes de objetos mágicos que aumentan la habilidad y destreza con las armas, estos anillos otorgan una habilidad letal, pero no la sabiduría para seguir vivo y mantener dicha habilidad.
+
+ESTADÍSTICAS:
+
+Habilidades equipadas:
+- Cuerpo a cuerpo THAC0: +1~
+
+@151   = ~Armadura roja de escamas de draco +2~
+@152   = ~Esta reluciente armadura de cuero carmesí es suave y flexible a pesar de la fuerza de las placas de escamas rojas de dragón. El portador de esta armadura está protegido incluso de los golpes más fuertes y es resistente al fuego. Sin embargo, hay que tener cuidado al llevarla cerca de dragones cromáticos, sobre todo rojos.
+
+ESTADÍSTICAS:
+
+Habilidades equipadas:
+- Resistencia al fuego: +66%
+
+Clase de Armadura: 5 (3 vs. cortante, 4 vs. perforante y proyectil)
+Requiere:
+ 6 Fuerza
+
+Peso: 7~
+
+@153   = ~Esta armadura resiste cualquier intento de ser usada mediante estrangulamiento del portador. Es probable que esté sintonizada con su dueño y que ningún otro pueda empuñarla.~ [GAM_47]
