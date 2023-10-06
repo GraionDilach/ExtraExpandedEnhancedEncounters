@@ -37,7 +37,7 @@ This component requires Siege of Dragonspear/Enhanced Edition Trilogy and will n
 
 Adds a fair amount of additional items to Mulahey's chest, one dedicated to Xan, and a few other intended for him.  
 This component also adds additional effects to his moonblade.
-**Note that this component heavily buffs the powerlevel of Xan and also can change his role in the party.** 
+**Note that this component heavily buffs the powerlevel of Xan and also can change his role in the party which might break the player's immersion.** 
 
 ### Daenni's Bridge Bandits
 
@@ -86,7 +86,7 @@ Fixed: Many description inconsistencies.
 Changed: Moonblade no longer provides additional magical fire resistance, and the leech-life damage is delivered as magic damage. Restored BGEE assumption of using Dagger class.  
 Changed: Melia's Ring of Accurate Striking only provides +1 Melee THAC0 (Mulahey's remained untouched).  
 Changed: No longer substitute vanilla items but patch them (Xan's Moonblade, Magma Bulwark, Bimmy's helmet).  
-Changed: The mod no longer tries to completely rearrange th3e contents of Mulahey's chest.  
+Changed: The mod no longer tries to completely rearrange the contents of Mulahey's chest.  
 Changed: Removed additional type of healing potions and substituted them with BG1 counterparts and Potion of Fortitude.
 
 ### Version 3.1
@@ -104,3 +104,7 @@ Adds Russian translation by yota13 & p_zombie.
 ### Version 4.1
 
 Fixed: wrong random treasures dropped in the Gnoll Stronghold and Undercity section on EET.
+
+### Version 4.2
+
+Added: Spanish translation by alaisFcZ.
