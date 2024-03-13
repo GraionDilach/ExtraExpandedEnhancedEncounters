@@ -1,7 +1,7 @@
 BACKUP ~ExtraExpandedEnhancedEncounters/backup~
 // AUTHOR ~Within Amnesia~
 SUPPORT "https://forums.beamdog.com/discussion/73749"
-VERSION ~4.2~
+VERSION ~4.3~
 
 ALWAYS
 	PRINT @0
@@ -11,7 +11,7 @@ ALWAYS
 		OUTER_SPRINT "area_prefix" AR
 		OUTER_SET isEET = 0
 	END
-		
+
 	ACTION_IF GAME_IS ~eet~
 	BEGIN
 		OUTER_SPRINT "area_prefix" BG
@@ -60,7 +60,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 			SAY 0x54 @150
 
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING07.BAM~ ~override~
-	
+
 	ACTION_IF GAME_IS ~eet~
 	BEGIN
 		COPY_EXISTING ~OLMELIAQ.cre~ ~override~
@@ -94,9 +94,9 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0x54 @136
 
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.BAM~ ~override~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLCBOW11.BAM~ ~override~
-	
+
 	ACTION_IF GAME_IS ~eet~
 	BEGIN
 		COPY_EXISTING ~OLBIMMY.cre~ ~override~
@@ -117,22 +117,22 @@ LABEL OL-EEEE-GNOLL-STRONGHOLD //AR5100
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 
 	EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100.BAF~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLC.cre~ ~override~
 		SAY 0x8 @112
 		SAY 0xC @112
 		WRITE_ASCII 0x2cc ~OLGNOLLC~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLL.cre~ ~override~
 		SAY 0x8 @113
 		SAY 0xC @113
 		WRITE_ASCII 0x2cc ~OLGNOLLL~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLV.cre~ ~override~
 		SAY 0x8 @114
 		SAY 0xC @114
 		WRITE_ASCII 0x2cc ~OLGNOLLV~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLE.cre~ ~override~
 		SAY 0x8 @115
 		SAY 0xC @115
@@ -142,12 +142,12 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0x8 @116
 		SAY 0xC @116
 		WRITE_ASCII 0x2cc ~OLGNOLLS~
-		
+
 	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLL.cre~ ~override~
 		SAY 0x8 @117
 		SAY 0xC @117
 		WRITE_ASCII 0x2cc ~OLGNOLL~
-	
+
 	ACTION_IF FILE_EXISTS_IN_GAME ~bdcaelar.cre~
 	BEGIN
 		EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100S.BAF~
@@ -185,16 +185,16 @@ LABEL OL-EEEE-XANS-NEW-GROVE //AR5405
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 
 	EXTEND_BOTTOM ~%area_prefix%5405.bcs~ ~ExtraExpandedEnhancedEncounters/OL5405.baf~
-	
+
 	COPY_EXISTING ~MULAHE.CRE~ ~override~
 		ADD_CRE_ITEM ~OLRING06~ #0 #0 #0 ~NONE~ ~RRING~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.ITM~ ~override~
 		SAY 0xC @120
 		SAY 0x54 @121
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.BAM~ ~override~
-	
+
 	OUTER_SET simulacrum = 26632
 
 	ACTION_IF isEET == 1
@@ -221,18 +221,18 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.ITM~ ~override~
 		SAY 0xC @147
 		SAY 0x54 @148
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.BAM~ ~override~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.ITM~ ~override~
 		SAY 0xC @143
 		SAY 0x54 @144
 
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.BAM~ ~override~
-	
+
 	OUTER_SET disablexanmail = RESOLVE_STR_REF(@153)
 	APPEND ~item_use.2da~ ~OLCHAN01 XAN %disablexanmail% 2 268~
-	
+
 	COPY_EXISTING ~item_use.2da~ ~override~
 		PRETTY_PRINT_2DA
 
@@ -248,14 +248,14 @@ LABEL OL-EEEE-CLOAKWOOD-BRIDGE //AR1700
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 
 	EXTEND_BOTTOM ~%area_prefix%1700.BCS~ ~ExtraExpandedEnhancedEncounters/OL1700.BAF~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLDAENNI.cre~ ~override~
 		SAY 0x8 @109
 		SAY 0xC @109
 		WRITE_ASCII 0x2cc ~OLDAENNI~
 
 	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLDAENNI.D~
-	
+
 	ACTION_IF isEET == 1
 	BEGIN
 		COPY_EXISTING ~OLDAENNI.cre~ ~override~
@@ -291,7 +291,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0x8 @110
 		SAY 0xC @110
 		WRITE_ASCII 0x2cc ~OLGWYVRN~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLFDRAKE.cre~ ~override~
 		SAY 0x8 @111
 		SAY 0xC @111
@@ -300,37 +300,37 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.ITM~ ~override~
 		SAY 0xC @130
 		SAY 0x54 @131
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.BAM~ ~override~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK1.ITM~ ~override~
 		SAY 0xC @132
 		SAY 0x54 @133
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK2.ITM~ ~override~
 		SAY 0xC @134
 		SAY 0x54 @133
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.ITM~ ~override~
 		SAY 0xC @122
 		SAY 0x54 @123
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.BAM~ ~override~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLDART01.ITM~ ~override~
 		SAY 0xC @124
 		SAY 0x54 @125
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLGWYVRN.ITM~ ~override~
 
 	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLTAEROM.D~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLEA.ITM~ ~override~
 		SAY 0xC @151
 		SAY 0x54 @152
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLEA.BAM~ ~override~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLED.BAM~ ~override~
 
 BEGIN @8
@@ -372,7 +372,7 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0x8 @106
 		SAY 0xC @106
 		WRITE_ASCII 0x2cc ~OLSKEL4C~
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL5C.cre~ ~override~
 		SAY 0x8 @107
 		SAY 0xC @107
@@ -382,20 +382,20 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		SAY 0x8 @108
 		SAY 0xC @108
 		WRITE_ASCII 0x2cc ~OLSKEL6G~
-	
+
 	ACTION_IF ol_magma_bulwark_icon == 1
 	BEGIN
 		COPY_EXISTING ~PLAT24.ITM~ ~override~
 			WRITE_ASCII 0x3A ~OLPLAT24~
 			BUT_ONLY
 	END
-	
+
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.BAM~ ~override~
 
 	COPY ~ExtraExpandedEnhancedEncounters/items/OLBOOT04.ITM~ ~override~
 		SAY 0xC @137
 		SAY 0x54 @138
-	
+
 	ACTION_IF FILE_EXISTS_IN_GAME ~bdcaelar.cre~
 	BEGIN
 		EXTEND_BOTTOM ~%area_prefix%0123.BCS~ ~ExtraExpandedEnhancedEncounters/OL0123S.BAF~
@@ -404,19 +404,19 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 		COPY_EXISTING ~OLSKEL2M.CRE~ ~override~
 			REMOVE_CRE_ITEM ~RNDTRE06~
 			BUT_ONLY
-		
+
 		COPY_EXISTING ~OLSKEL3M.CRE~ ~override~
 			REMOVE_CRE_ITEM ~RNDTRE09~
 			BUT_ONLY
-		
+
 		COPY_EXISTING ~OLSKEL4C.CRE~ ~override~
 			REMOVE_CRE_ITEM ~RNDTRE08~
 			BUT_ONLY
-		
+
 		COPY_EXISTING ~OLSKEL5C.CRE~ ~override~
 			REMOVE_CRE_ITEM ~RNDTRE09~
 			BUT_ONLY
-		
+
 		COPY_EXISTING ~OLSKEL6G.CRE~ ~override~
 			REMOVE_CRE_ITEM ~RNDPTN03~
 			REMOVE_CRE_ITEM ~RNDSCRL~
@@ -438,4 +438,3 @@ REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
 			LPM PATCH_EET_RANDOM_TREASURES
 		BUT_ONLY
 	END
-
