@@ -36,6 +36,11 @@ LANGUAGE ~Spanish (by alaisFcZ)~
          ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
          ~ExtraExpandedEnhancedEncounters/translations/spanish/setup.tra~
 
+LANGUAGE ~Simplified Chinese (translation: Lewis Liu)~
+         ~schinese~
+         ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
+         ~ExtraExpandedEnhancedEncounters/translations/schinese/setup.tra~
+
 BEGIN @1
 DESIGNATED 0
 LABEL OL-EEEE-COAST-WAY //AR2800
