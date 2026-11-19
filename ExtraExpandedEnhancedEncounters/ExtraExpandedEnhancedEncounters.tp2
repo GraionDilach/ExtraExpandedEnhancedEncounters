@@ -1,450 +1,513 @@
 BACKUP ~ExtraExpandedEnhancedEncounters/backup~
 // AUTHOR ~Within Amnesia~
 SUPPORT "https://forums.beamdog.com/discussion/73749"
-VERSION ~4.5~
+VERSION ~4.6~
 
 ALWAYS
-	PRINT @0
+    PRINT @0
 
-	ACTION_IF GAME_IS ~bgee~
-	BEGIN
-		OUTER_SPRINT "area_prefix" AR
-		OUTER_SET isEET = 0
-	END
+    ACTION_IF GAME_IS ~bgee~ BEGIN
+        OUTER_SPRINT "area_prefix" AR
+        OUTER_SET isEET = 0
+    END
 
-	ACTION_IF GAME_IS ~eet~
-	BEGIN
-		OUTER_SPRINT "area_prefix" BG
-		OUTER_SET isEET = 1
-	END
+    ACTION_IF GAME_IS ~eet~ BEGIN
+        OUTER_SPRINT "area_prefix" BG
+        OUTER_SET isEET = 1
+    END
 
-	INCLUDE ~ExtraExpandedEnhancedEncounters/library/macros.tpa~
+    INCLUDE ~ExtraExpandedEnhancedEncounters/library/macros.tpa~
 END
 
 AUTO_TRA ~ExtraExpandedEnhancedEncounters/translations/%s~
-LANGUAGE ~English~
-		 ~English~
-		 ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
+LANGUAGE ~English~ ~English~ ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
 
-LANGUAGE ~Russian (by yota13 & p_zombie)~
-		 ~Russian~
-		 ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
-		 ~ExtraExpandedEnhancedEncounters/translations/russian/setup.tra~
+LANGUAGE ~Russian (by yota13 & p_zombie)~ ~Russian~ ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~ ~ExtraExpandedEnhancedEncounters/translations/russian/setup.tra~
 
-LANGUAGE ~Spanish (by alaisFcZ)~
-		 ~Spanish~
-		 ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
-		 ~ExtraExpandedEnhancedEncounters/translations/spanish/setup.tra~
+LANGUAGE ~Spanish (by alaisFcZ)~ ~Spanish~ ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~ ~ExtraExpandedEnhancedEncounters/translations/spanish/setup.tra~
 
-LANGUAGE ~Simplified Chinese (by Lewis Liu)~
-		 ~schinese~
-		 ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
-		 ~ExtraExpandedEnhancedEncounters/translations/schinese/setup.tra~
+LANGUAGE ~Simplified Chinese (written by Lewis Liu, standardized by DiabloIORI)~ ~schinese~ ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~ ~ExtraExpandedEnhancedEncounters/translations/schinese/setup.tra~
 
-LANGUAGE ~Polish (by Aristo)~
-		 ~Polish~
-		 ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
-		 ~ExtraExpandedEnhancedEncounters/translations/polish/setup.tra~
+LANGUAGE ~Polish (by Aristo)~ ~Polish~ ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~ ~ExtraExpandedEnhancedEncounters/translations/polish/setup.tra~
 
-LANGUAGE ~German (by Nibor_Scot)~
-		 ~German~
-		 ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~
-		 ~ExtraExpandedEnhancedEncounters/translations/german/setup.tra~
+LANGUAGE ~German (by Nibor_Scot)~ ~German~ ~ExtraExpandedEnhancedEncounters/translations/english/setup.tra~ ~ExtraExpandedEnhancedEncounters/translations/german/setup.tra~
 
 BEGIN @1
 DESIGNATED 0
-LABEL OL-EEEE-COAST-WAY //AR2800
+LABEL OL-EEEE-COAST-WAY  // AR2800
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
+EXTEND_BOTTOM ~%area_prefix%2800.BCS~ ~ExtraExpandedEnhancedEncounters/OL2800.BAF~
 
-	EXTEND_BOTTOM ~%area_prefix%2800.BCS~ ~ExtraExpandedEnhancedEncounters/OL2800.BAF~
+COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLMELIAQ.D~
 
-	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLMELIAQ.D~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLMELIAQ.cre~ ~override~
+    SAY 0x8 @101
+    SAY 0xC @101
+    WRITE_ASCII 0x2cc ~OLMELIAQ~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLMELIAQ.cre~ ~override~
-		SAY 0x8 @101
-		SAY 0xC @101
-		WRITE_ASCII 0x2cc ~OLMELIAQ~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLRING07.ITM~ ~override~
+    SAY 0xC @149
+    SAY 0x54 @150
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING07.ITM~ ~override~
-			SAY 0xC @149
-			SAY 0x54 @150
+COPY ~ExtraExpandedEnhancedEncounters/items/OLRING07.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING07.BAM~ ~override~
-
-	ACTION_IF GAME_IS ~eet~
-	BEGIN
-		COPY_EXISTING ~OLMELIAQ.cre~ ~override~
-			WRITE_LONG INITIAL_MEETING 211128
-			WRITE_LONG BATTLE_CRY1 211128
-			WRITE_LONG BATTLE_CRY2 211128
-			WRITE_LONG BATTLE_CRY3 211128
-			WRITE_LONG DAMAGE 212359
-			WRITE_LONG DYING 212353
-			WRITE_LONG HURT 212358
-			WRITE_LONG SELECT_COMMON1 211128
-			WRITE_LONG SELECT_COMMON2 211128
-			WRITE_LONG BIO (BNOT 0x0)
-		BUT_ONLY
-	END
+ACTION_IF GAME_IS ~eet~ BEGIN
+    COPY_EXISTING ~OLMELIAQ.cre~ ~override~
+        WRITE_LONG INITIAL_MEETING 211128
+        WRITE_LONG BATTLE_CRY1 211128
+        WRITE_LONG BATTLE_CRY2 211128
+        WRITE_LONG BATTLE_CRY3 211128
+        WRITE_LONG DAMAGE 212359
+        WRITE_LONG DYING 212353
+        WRITE_LONG HURT 212358
+        WRITE_LONG SELECT_COMMON1 211128
+        WRITE_LONG SELECT_COMMON2 211128
+        WRITE_LONG BIO (BNOT 0x0)
+    BUT_ONLY
+END
 
 BEGIN @2
 DESIGNATED 1
-LABEL OL-EEEE-LONELY-PEAKS //AR4400
+LABEL OL-EEEE-LONELY-PEAKS  // AR4400
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
+EXTEND_BOTTOM ~%area_prefix%4400.BCS~ ~ExtraExpandedEnhancedEncounters/OL4400.BAF~
 
-	EXTEND_BOTTOM ~%area_prefix%4400.BCS~ ~ExtraExpandedEnhancedEncounters/OL4400.BAF~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLBIMMY.cre~ ~override~
+    SAY 0x8 @102
+    SAY 0xC @102
+    WRITE_ASCII 0x2cc ~BIMMY~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLBIMMY.cre~ ~override~
-		SAY 0x8 @102
-		SAY 0xC @102
-		WRITE_ASCII 0x2cc ~BIMMY~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.ITM~ ~override~
+    SAY 0xC @135
+    SAY 0x54 @136
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.ITM~ ~override~
-		SAY 0xC @135
-		SAY 0x54 @136
+COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLBOW11.BAM~ ~override~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLCBOW11.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLCBOW11.BAM~ ~override~
+ACTION_IF GAME_IS ~eet~ BEGIN
+    COPY_EXISTING ~OLBIMMY.cre~ ~override~
+        WRITE_LONG INITIAL_MEETING 204956
+        WRITE_LONG BATTLE_CRY1 211104
+        WRITE_LONG DAMAGE 212592
+        WRITE_LONG DYING 212593
+        WRITE_LONG SELECT_COMMON1 204955
+        WRITE_LONG SELECT_COMMON2 204956
+    BUT_ONLY
+END
 
-	ACTION_IF GAME_IS ~eet~
-	BEGIN
-		COPY_EXISTING ~OLBIMMY.cre~ ~override~
-			WRITE_LONG INITIAL_MEETING 204956
-			WRITE_LONG BATTLE_CRY1 211104
-			WRITE_LONG DAMAGE 212592
-			WRITE_LONG DYING 212593
-			WRITE_LONG SELECT_COMMON1 204955
-			WRITE_LONG SELECT_COMMON2 204956
-		BUT_ONLY
-	END
-
-	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLCANTO.D~
+COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLCANTO.D~
 
 BEGIN @3
 DESIGNATED 2
-LABEL OL-EEEE-GNOLL-STRONGHOLD //AR5100
+LABEL OL-EEEE-GNOLL-STRONGHOLD  // AR5100
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
+EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100.BAF~
 
-	EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100.BAF~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLC.cre~ ~override~
+    SAY 0x8 @112
+    SAY 0xC @112
+    WRITE_ASCII 0x2cc ~OLGNOLLC~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLC.cre~ ~override~
-		SAY 0x8 @112
-		SAY 0xC @112
-		WRITE_ASCII 0x2cc ~OLGNOLLC~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLL.cre~ ~override~
+    SAY 0x8 @113
+    SAY 0xC @113
+    WRITE_ASCII 0x2cc ~OLGNOLLL~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLL.cre~ ~override~
-		SAY 0x8 @113
-		SAY 0xC @113
-		WRITE_ASCII 0x2cc ~OLGNOLLL~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLV.cre~ ~override~
+    SAY 0x8 @114
+    SAY 0xC @114
+    WRITE_ASCII 0x2cc ~OLGNOLLV~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLV.cre~ ~override~
-		SAY 0x8 @114
-		SAY 0xC @114
-		WRITE_ASCII 0x2cc ~OLGNOLLV~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLE.cre~ ~override~
+    SAY 0x8 @115
+    SAY 0xC @115
+    WRITE_ASCII 0x2cc ~OLGNOLLE~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLE.cre~ ~override~
-		SAY 0x8 @115
-		SAY 0xC @115
-		WRITE_ASCII 0x2cc ~OLGNOLLE~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLS.cre~ ~override~
+    SAY 0x8 @116
+    SAY 0xC @116
+    WRITE_ASCII 0x2cc ~OLGNOLLS~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLLS.cre~ ~override~
-		SAY 0x8 @116
-		SAY 0xC @116
-		WRITE_ASCII 0x2cc ~OLGNOLLS~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLL.cre~ ~override~
+    SAY 0x8 @117
+    SAY 0xC @117
+    WRITE_ASCII 0x2cc ~OLGNOLL~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGNOLL.cre~ ~override~
-		SAY 0x8 @117
-		SAY 0xC @117
-		WRITE_ASCII 0x2cc ~OLGNOLL~
+ACTION_IF FILE_EXISTS_IN_GAME ~bdcaelar.cre~ BEGIN
+    EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100S.BAF~
+END
 
-	ACTION_IF FILE_EXISTS_IN_GAME ~bdcaelar.cre~
-	BEGIN
-		EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100S.BAF~
-	END
+ACTION_IF isEET == 1 BEGIN
+    COPY_EXISTING_REGEXP GLOB ~OLGNOL.*\.cre~ ~override~
+        WRITE_LONG BATTLE_CRY1 205512
+        WRITE_LONG BATTLE_CRY2 205139
+        WRITE_LONG DAMAGE 205517
+        WRITE_LONG DYING 205518
+        WRITE_LONG SELECT_COMMON1 205510
+        WRITE_LONG SELECT_COMMON2 205511
+        LPM PATCH_EET_RANDOM_TREASURES
+    BUT_ONLY
+END
 
-	ACTION_IF isEET == 1
-	BEGIN
-		COPY_EXISTING_REGEXP GLOB ~OLGNOL.*\.cre~ ~override~
-			WRITE_LONG BATTLE_CRY1 205512
-			WRITE_LONG BATTLE_CRY2 205139
-			WRITE_LONG DAMAGE 205517
-			WRITE_LONG DYING 205518
-			WRITE_LONG SELECT_COMMON1 205510
-			WRITE_LONG SELECT_COMMON2 205511
-			LPM PATCH_EET_RANDOM_TREASURES
-		BUT_ONLY
-	END
-
-	// Prevent spawning the Fission Slime if Aaron from Ascalon's Questpack - Feast of Gnolls already occupies the cell
-	ACTION_IF NOT FILE_EXISTS_IN_GAME ~ACQ12002.CRE~
-	BEGIN
-		EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100FS.BAF~
-	END
+// Prevent spawning the Fission Slime if Aaron from Ascalon's Questpack - Feast of Gnolls already occupies the cell
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ACQ12002.CRE~ BEGIN
+    EXTEND_BOTTOM ~%area_prefix%5100.BCS~ ~ExtraExpandedEnhancedEncounters/OL5100FS.BAF~
+END
 
 BEGIN @4
 DESIGNATED 3
-LABEL OL-EEEE-GNOLL-STRONGHOLD-CAVE //AR5102
+LABEL OL-EEEE-GNOLL-STRONGHOLD-CAVE  // AR5102
 REQUIRE_PREDICATE (FILE_EXISTS_IN_GAME ~bdcaelar.cre~) @10  // explicitly relies on SoD content, skipping on BGEE
-
-	EXTEND_BOTTOM ~%area_prefix%5102.BCS~ ~ExtraExpandedEnhancedEncounters/OL5102.BAF~
+EXTEND_BOTTOM ~%area_prefix%5102.BCS~ ~ExtraExpandedEnhancedEncounters/OL5102.BAF~
 
 BEGIN @5
 DESIGNATED 4
-LABEL OL-EEEE-XANS-NEW-GROVE //AR5405
+LABEL OL-EEEE-XANS-NEW-GROVE  // AR5405
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
+EXTEND_BOTTOM ~%area_prefix%5405.bcs~ ~ExtraExpandedEnhancedEncounters/OL5405.baf~
 
-	EXTEND_BOTTOM ~%area_prefix%5405.bcs~ ~ExtraExpandedEnhancedEncounters/OL5405.baf~
+COPY_EXISTING ~MULAHE.CRE~ ~override~
+    ADD_CRE_ITEM ~OLRING06~ #0 #0 #0 ~NONE~ ~RRING~
 
-	COPY_EXISTING ~MULAHE.CRE~ ~override~
-		ADD_CRE_ITEM ~OLRING06~ #0 #0 #0 ~NONE~ ~RRING~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.ITM~ ~override~
+    SAY 0xC @120
+    SAY 0x54 @121
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.ITM~ ~override~
-		SAY 0xC @120
-		SAY 0x54 @121
+COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING06.BAM~ ~override~
+OUTER_SET simulacrum = 26632
 
-	OUTER_SET simulacrum = 26632
+ACTION_IF isEET == 1 BEGIN
+    OUTER_SET simulacrum = 226632
+END
 
-	ACTION_IF isEET == 1
-	BEGIN
-		OUTER_SET simulacrum = 226632
-	END
+COPY_EXISTING ~SW1H13.ITM~ ~override~
+    LPF ADD_ITEM_EQEFFECT
+        INT_VAR
+            opcode       = 233
+            target       = 1
+            parameter1   = 1
+            parameter2   = (96 + (0x10000 * 1))
+            timing       = 2
+            insert_point = 9999
+    END
+    LPF ADD_ITEM_EQEFFECT
+        INT_VAR
+            opcode       = 1
+            target       = 1
+            parameter1   = 6
+            timing       = 2
+            insert_point = 9999
+    END
+    LPF ADD_ITEM_EQEFFECT
+        INT_VAR
+            opcode       = 177
+            target       = 1
+            parameter2   = 2
+            timing       = 2
+            insert_point = 9999
+        STR_VAR
+            resource = ~UNDEDHIT~
+    END
+    LPF ADD_ITEM_EQEFFECT
+        INT_VAR
+            opcode       = 344
+            target       = 1
+            parameter1   = 4
+            parameter2   = 3
+            timing       = 2
+            special      = 5
+            insert_point = 9999
+    END
+    LPF ADD_ITEM_EQEFFECT
+        INT_VAR
+            opcode       = 191
+            target       = 1
+            parameter1   = 1
+            timing       = 2
+            insert_point = 9999
+    END
+    LPF ADD_ITEM_EFFECT
+        INT_VAR
+            opcode     = 177
+            parameter1 = 4
+            parameter2 = 3
+            timing     = 1
+            header     = 1
+            type       = 1
+        STR_VAR
+            resource = ~SW1H79~
+    END
+    LPF ADD_ITEM_EFFECT
+        INT_VAR
+            opcode     = 12
+            target     = 2
+            parameter1 = 1
+            parameter2 = (0x10000 * 64)
+            special    = 8
+            header     = 1
+            type       = 1
+    END
+    LPF ADD_ITEM_HEADER
+        INT_VAR
+            target      = 5
+            required_id = 1
+            range       = 1
+            charges     = 1
+            flags       = 2048
+        STR_VAR
+            icon = ~ISW1H13~
+    END
+    LPF ADD_ITEM_EFFECT
+        INT_VAR
+            opcode        = 236
+            power         = 8
+            target        = 1
+            parameter2    = 3
+            duration      = 60
+            resist_dispel = 1
+    END
+    LPF ADD_ITEM_EFFECT
+        INT_VAR
+            opcode        = 233
+            target        = 1
+            parameter1    = 3
+            parameter2    = 127
+            duration      = 60
+            resist_dispel = 1
+    END
+    LPF ADD_ITEM_EFFECT
+        INT_VAR
+            opcode        = 215
+            target        = 1
+            timing        = 1
+            resist_dispel = 2
+            duration      = 3
+        STR_VAR
+            resource = ~SPPROIMG~
+    END
+    LPF ADD_ITEM_EFFECT
+        INT_VAR
+            opcode        = 206
+            power         = 8
+            target        = 1
+            parameter1    = %simulacrum%
+            resist_dispel = 1
+        STR_VAR
+            resource = ~SPWI804~
+    END
+    SAY 0x54 @142
+BUT_ONLY
 
-	COPY_EXISTING ~SW1H13.ITM~ ~override~
-		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 233 target = 1 parameter1 = 1 parameter2 = (96 + (0x10000 * 1)) timing = 2 insert_point = 9999 END
-		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 1 target = 1 parameter1 = 6 timing = 2 insert_point = 9999 END
-		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 177 target = 1 parameter2 = 2 timing = 2 insert_point = 9999 STR_VAR resource = ~UNDEDHIT~ END
-		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 344 target = 1 parameter1 = 4 parameter2 = 3 timing = 2 special = 5 insert_point = 9999 END
-		LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 191 target = 1 parameter1 = 1 timing = 2 insert_point = 9999 END
-		LPF ADD_ITEM_EFFECT INT_VAR opcode = 177 parameter1 = 4 parameter2 = 3 timing = 1 header = 1 type = 1 STR_VAR resource = ~SW1H79~ END
-		LPF ADD_ITEM_EFFECT INT_VAR opcode = 12 target = 2 parameter1 = 1 parameter2 = (0x10000 * 64) special = 8 header = 1 type= 1 END
-		LPF ADD_ITEM_HEADER INT_VAR target = 5 required_id = 1 range = 1 charges = 1 flags = 2048 STR_VAR icon = ~ISW1H13~ END
-		LPF ADD_ITEM_EFFECT INT_VAR opcode = 236 power = 8 target = 1 parameter2 = 3 duration = 60 resist_dispel = 1 END
-		LPF ADD_ITEM_EFFECT INT_VAR opcode = 233 target = 1 parameter1 = 3 parameter2 = 127 duration = 60 resist_dispel = 1 END
-		LPF ADD_ITEM_EFFECT INT_VAR opcode = 215 target = 1 timing = 1 resist_dispel = 2 duration = 3 STR_VAR resource = ~SPPROIMG~ END
-		LPF ADD_ITEM_EFFECT INT_VAR opcode = 206 power = 8 target = 1 parameter1 = %simulacrum% resist_dispel = 1 STR_VAR resource = ~SPWI804~ END
-		SAY 0x54 @142
-	BUT_ONLY
+COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.ITM~ ~override~
+    SAY 0xC @147
+    SAY 0x54 @148
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.ITM~ ~override~
-		SAY 0xC @147
-		SAY 0x54 @148
+COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLSHLD02.BAM~ ~override~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.ITM~ ~override~
+    SAY 0xC @143
+    SAY 0x54 @144
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.ITM~ ~override~
-		SAY 0xC @143
-		SAY 0x54 @144
+COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLCHAN01.BAM~ ~override~
+OUTER_SET disablexanmail = RESOLVE_STR_REF(@153)
+APPEND ~item_use.2da~ ~OLCHAN01 XAN %disablexanmail% 2 268~
 
-	OUTER_SET disablexanmail = RESOLVE_STR_REF(@153)
-	APPEND ~item_use.2da~ ~OLCHAN01 XAN %disablexanmail% 2 268~
+COPY_EXISTING ~item_use.2da~ ~override~
+    PRETTY_PRINT_2DA
 
-	COPY_EXISTING ~item_use.2da~ ~override~
-		PRETTY_PRINT_2DA
+COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.ITM~ ~override~
+    SAY 0xC @145
+    SAY 0x54 @146
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.ITM~ ~override~
-		SAY 0xC @145
-		SAY 0x54 @146
-
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.BAM~ ~override~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLHELM21.BAM~ ~override~
 
 BEGIN @6
 DESIGNATED 5
-LABEL OL-EEEE-CLOAKWOOD-BRIDGE //AR1700
+LABEL OL-EEEE-CLOAKWOOD-BRIDGE  // AR1700
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
+EXTEND_BOTTOM ~%area_prefix%1700.BCS~ ~ExtraExpandedEnhancedEncounters/OL1700.BAF~
 
-	EXTEND_BOTTOM ~%area_prefix%1700.BCS~ ~ExtraExpandedEnhancedEncounters/OL1700.BAF~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLDAENNI.cre~ ~override~
+    SAY 0x8 @109
+    SAY 0xC @109
+    WRITE_ASCII 0x2cc ~OLDAENNI~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLDAENNI.cre~ ~override~
-		SAY 0x8 @109
-		SAY 0xC @109
-		WRITE_ASCII 0x2cc ~OLDAENNI~
+COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLDAENNI.D~
 
-	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLDAENNI.D~
-
-	ACTION_IF isEET == 1
-	BEGIN
-		COPY_EXISTING ~OLDAENNI.cre~ ~override~
-			WRITE_LONG INITIAL_MEETING 211129
-			WRITE_LONG BATTLE_CRY1 211129
-			WRITE_LONG DAMAGE 212357
-			WRITE_LONG DYING 212351
-			WRITE_LONG SELECT_COMMON1 211129
-		BUT_ONLY
-	END
+ACTION_IF isEET == 1 BEGIN
+    COPY_EXISTING ~OLDAENNI.cre~ ~override~
+        WRITE_LONG INITIAL_MEETING 211129
+        WRITE_LONG BATTLE_CRY1 211129
+        WRITE_LONG DAMAGE 212357
+        WRITE_LONG DYING 212351
+        WRITE_LONG SELECT_COMMON1 211129
+    BUT_ONLY
+END
 
 BEGIN @7
 DESIGNATED 6
-LABEL OL-EEEE-WYVERN-CAVE //AR4501
+LABEL OL-EEEE-WYVERN-CAVE  // AR4501
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
+ACTION_IF isEET == 1 BEGIN
+    COPY_EXISTING ~%area_prefix%4501.ARE~ ~override~
+        WRITE_ASCII 0x94 ~BG4501~ #8
+    BUT_ONLY
+END ELSE BEGIN
+    COPY_EXISTING ~%area_prefix%4501.ARE~ ~override~
+        WRITE_ASCII 0x94 ~AR4501~ #8
+    BUT_ONLY
+END
 
-		ACTION_IF isEET == 1
-		BEGIN
-			COPY_EXISTING ~%area_prefix%4501.ARE~ ~override~
-				WRITE_ASCII 0x94 ~BG4501~ #8
-			BUT_ONLY
-		END
-		ELSE
-		BEGIN
-			COPY_EXISTING ~%area_prefix%4501.ARE~ ~override~
-				WRITE_ASCII 0x94 ~AR4501~ #8
-			BUT_ONLY
-		END
+EXTEND_BOTTOM ~%area_prefix%4501.BCS~ ~ExtraExpandedEnhancedEncounters/OL4501.BAF~
 
-	EXTEND_BOTTOM ~%area_prefix%4501.BCS~ ~ExtraExpandedEnhancedEncounters/OL4501.BAF~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGWYVRN.cre~ ~override~
+    SAY 0x8 @110
+    SAY 0xC @110
+    WRITE_ASCII 0x2cc ~OLGWYVRN~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLGWYVRN.cre~ ~override~
-		SAY 0x8 @110
-		SAY 0xC @110
-		WRITE_ASCII 0x2cc ~OLGWYVRN~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLFDRAKE.cre~ ~override~
+    SAY 0x8 @111
+    SAY 0xC @111
+    WRITE_ASCII 0x2cc ~OLFDRAKE~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLFDRAKE.cre~ ~override~
-		SAY 0x8 @111
-		SAY 0xC @111
-		WRITE_ASCII 0x2cc ~OLFDRAKE~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.ITM~ ~override~
+    SAY 0xC @130
+    SAY 0x54 @131
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.ITM~ ~override~
-		SAY 0xC @130
-		SAY 0x54 @131
+COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDSCAL.BAM~ ~override~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK1.ITM~ ~override~
+    SAY 0xC @132
+    SAY 0x54 @133
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK1.ITM~ ~override~
-		SAY 0xC @132
-		SAY 0x54 @133
+COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK2.ITM~ ~override~
+    SAY 0xC @134
+    SAY 0x54 @133
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLFDRAK2.ITM~ ~override~
-		SAY 0xC @134
-		SAY 0x54 @133
+COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.ITM~ ~override~
+    SAY 0xC @122
+    SAY 0x54 @123
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.ITM~ ~override~
-		SAY 0xC @122
-		SAY 0x54 @123
+COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLRING05.BAM~ ~override~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLDART01.ITM~ ~override~
+    SAY 0xC @124
+    SAY 0x54 @125
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLDART01.ITM~ ~override~
-		SAY 0xC @124
-		SAY 0x54 @125
+COPY ~ExtraExpandedEnhancedEncounters/items/OLGWYVRN.ITM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLGWYVRN.ITM~ ~override~
+COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLTAEROM.D~
 
-	COMPILE EVALUATE_BUFFER ~ExtraExpandedEnhancedEncounters/dialogue/OLTAEROM.D~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLEA.ITM~ ~override~
+    SAY 0xC @151
+    SAY 0x54 @152
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLEA.ITM~ ~override~
-		SAY 0xC @151
-		SAY 0x54 @152
+COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLEA.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLEA.BAM~ ~override~
-
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLED.BAM~ ~override~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLZGFLED.BAM~ ~override~
 
 BEGIN @8
 DESIGNATED 7
-LABEL OL-EEEE-UNDERCITY //AR0123
+LABEL OL-EEEE-UNDERCITY  // AR0123
 REQUIRE_PREDICATE (GAME_IS ~bgee eet~) @11
+ACTION_IF !(FILE_EXISTS ~override/ol_eeee.ini~) BEGIN
+    COPY ~ExtraExpandedEnhancedEncounters/ini/ol_eeee.ini~ ~override~
+END
 
-	ACTION_IF !(FILE_EXISTS ~override/ol_eeee.ini~)
-	BEGIN
-		COPY ~ExtraExpandedEnhancedEncounters/ini/ol_eeee.ini~ ~override~
-  	END
+INCLUDE ~override/ol_eeee.ini~
 
-	INCLUDE ~override/ol_eeee.ini~
+COPY_EXISTING ~%area_prefix%0123.ARE~ ~override~  // Removes PLAT24
+    LPF DELETE_AREA_ITEM
+        STR_VAR
+            item_to_delete = "PLAT24"
+    END
+BUT_ONLY
 
-	COPY_EXISTING ~%area_prefix%0123.ARE~ ~override~	// Removes PLAT24
-		LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "PLAT24" END
-		BUT_ONLY
+EXTEND_BOTTOM ~%area_prefix%0123.BCS~ ~ExtraExpandedEnhancedEncounters/OL0123.BAF~
 
-	EXTEND_BOTTOM ~%area_prefix%0123.BCS~ ~ExtraExpandedEnhancedEncounters/OL0123.BAF~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL1W.cre~ ~override~
+    SAY 0x8 @103
+    SAY 0xC @103
+    WRITE_ASCII 0x2cc ~OLSKEL1W~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL1W.cre~ ~override~
-		SAY 0x8 @103
-		SAY 0xC @103
-		WRITE_ASCII 0x2cc ~OLSKEL1W~
+COPY ~ExtraExpandedEnhancedEncounters/scripts/OLUSKEL1.BCS~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/scripts/OLUSKEL1.BCS~ ~override~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL2M.cre~ ~override~
+    SAY 0x8 @104
+    SAY 0xC @104
+    WRITE_ASCII 0x2cc ~OLSKEL2M~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL2M.cre~ ~override~
-		SAY 0x8 @104
-		SAY 0xC @104
-		WRITE_ASCII 0x2cc ~OLSKEL2M~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL3M.cre~ ~override~
+    SAY 0x8 @105
+    SAY 0xC @105
+    WRITE_ASCII 0x2cc ~OLSKEL3M~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL3M.cre~ ~override~
-		SAY 0x8 @105
-		SAY 0xC @105
-		WRITE_ASCII 0x2cc ~OLSKEL3M~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL4C.cre~ ~override~
+    SAY 0x8 @106
+    SAY 0xC @106
+    WRITE_ASCII 0x2cc ~OLSKEL4C~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL4C.cre~ ~override~
-		SAY 0x8 @106
-		SAY 0xC @106
-		WRITE_ASCII 0x2cc ~OLSKEL4C~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL5C.cre~ ~override~
+    SAY 0x8 @107
+    SAY 0xC @107
+    WRITE_ASCII 0x2cc ~OLSKEL5C~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL5C.cre~ ~override~
-		SAY 0x8 @107
-		SAY 0xC @107
-		WRITE_ASCII 0x2cc ~OLSKEL5C~
+COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL6G.cre~ ~override~
+    SAY 0x8 @108
+    SAY 0xC @108
+    WRITE_ASCII 0x2cc ~OLSKEL6G~
 
-	COPY ~ExtraExpandedEnhancedEncounters/creatures/OLSKEL6G.cre~ ~override~
-		SAY 0x8 @108
-		SAY 0xC @108
-		WRITE_ASCII 0x2cc ~OLSKEL6G~
+ACTION_IF ol_magma_bulwark_icon == 1 BEGIN
+    COPY_EXISTING ~PLAT24.ITM~ ~override~
+        WRITE_ASCII 0x3A ~OLPLAT24~
+    BUT_ONLY
+END
 
-	ACTION_IF ol_magma_bulwark_icon == 1
-	BEGIN
-		COPY_EXISTING ~PLAT24.ITM~ ~override~
-			WRITE_ASCII 0x3A ~OLPLAT24~
-			BUT_ONLY
-	END
+COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.BAM~ ~override~
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLPLAT24.BAM~ ~override~
+COPY ~ExtraExpandedEnhancedEncounters/items/OLBOOT04.ITM~ ~override~
+    SAY 0xC @137
+    SAY 0x54 @138
 
-	COPY ~ExtraExpandedEnhancedEncounters/items/OLBOOT04.ITM~ ~override~
-		SAY 0xC @137
-		SAY 0x54 @138
+ACTION_IF FILE_EXISTS_IN_GAME ~bdcaelar.cre~ BEGIN
+    EXTEND_BOTTOM ~%area_prefix%0123.BCS~ ~ExtraExpandedEnhancedEncounters/OL0123S.BAF~
+END ELSE BEGIN
+    COPY_EXISTING ~OLSKEL2M.CRE~ ~override~
+        REMOVE_CRE_ITEM ~RNDTRE06~
+    BUT_ONLY
 
-	ACTION_IF FILE_EXISTS_IN_GAME ~bdcaelar.cre~
-	BEGIN
-		EXTEND_BOTTOM ~%area_prefix%0123.BCS~ ~ExtraExpandedEnhancedEncounters/OL0123S.BAF~
-	END
-	ELSE BEGIN
-		COPY_EXISTING ~OLSKEL2M.CRE~ ~override~
-			REMOVE_CRE_ITEM ~RNDTRE06~
-			BUT_ONLY
+    COPY_EXISTING ~OLSKEL3M.CRE~ ~override~
+        REMOVE_CRE_ITEM ~RNDTRE09~
+    BUT_ONLY
 
-		COPY_EXISTING ~OLSKEL3M.CRE~ ~override~
-			REMOVE_CRE_ITEM ~RNDTRE09~
-			BUT_ONLY
+    COPY_EXISTING ~OLSKEL4C.CRE~ ~override~
+        REMOVE_CRE_ITEM ~RNDTRE08~
+    BUT_ONLY
 
-		COPY_EXISTING ~OLSKEL4C.CRE~ ~override~
-			REMOVE_CRE_ITEM ~RNDTRE08~
-			BUT_ONLY
+    COPY_EXISTING ~OLSKEL5C.CRE~ ~override~
+        REMOVE_CRE_ITEM ~RNDTRE09~
+    BUT_ONLY
 
-		COPY_EXISTING ~OLSKEL5C.CRE~ ~override~
-			REMOVE_CRE_ITEM ~RNDTRE09~
-			BUT_ONLY
+    COPY_EXISTING ~OLSKEL6G.CRE~ ~override~
+        REMOVE_CRE_ITEM ~RNDPTN03~
+        REMOVE_CRE_ITEM ~RNDSCRL~
+    BUT_ONLY
+END
 
-		COPY_EXISTING ~OLSKEL6G.CRE~ ~override~
-			REMOVE_CRE_ITEM ~RNDPTN03~
-			REMOVE_CRE_ITEM ~RNDSCRL~
-			BUT_ONLY
-	END
-
-	ACTION_IF isEET == 1
-	BEGIN
-		COPY_EXISTING_REGEXP GLOB ~OLSKEL.*\.cre~ ~override~
-			WRITE_LONG BATTLE_CRY1 205140
-			WRITE_LONG BATTLE_CRY2 205548
-			WRITE_LONG ATTACK1 205549
-			WRITE_LONG ATTACK2 205550
-			WRITE_LONG ATTACK3 205551
-			WRITE_LONG DAMAGE 205552
-			WRITE_LONG DYING 205553
-			WRITE_LONG SELECT_COMMON1 205546
-			WRITE_LONG SELECT_COMMON2 205547
-			LPM PATCH_EET_RANDOM_TREASURES
-		BUT_ONLY
-	END
+ACTION_IF isEET == 1 BEGIN
+    COPY_EXISTING_REGEXP GLOB ~OLSKEL.*\.cre~ ~override~
+        WRITE_LONG BATTLE_CRY1 205140
+        WRITE_LONG BATTLE_CRY2 205548
+        WRITE_LONG ATTACK1 205549
+        WRITE_LONG ATTACK2 205550
+        WRITE_LONG ATTACK3 205551
+        WRITE_LONG DAMAGE 205552
+        WRITE_LONG DYING 205553
+        WRITE_LONG SELECT_COMMON1 205546
+        WRITE_LONG SELECT_COMMON2 205547
+        LPM PATCH_EET_RANDOM_TREASURES
+    BUT_ONLY
+END

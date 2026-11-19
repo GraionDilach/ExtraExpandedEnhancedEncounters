@@ -120,3 +120,7 @@ Added: Polish translation by Aristo.
 ### Version 4.5
 
 Added: German translation by Nibor_Scot.
+
+### Version 4.6
+
+Updated: Chinese translation for term standardization as per the internal CN localization glossary by DiabloIORI.
